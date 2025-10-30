@@ -1,0 +1,176 @@
+:root{
+
+    /* basic size 1rem */
+    --basic-font-pc:20px;
+    --basic-font-tab:18px;
+    --basic-font-mobile:14px;
+
+    /* color variation */
+    --main-black:#00020D;
+    --main-black-0: #F5F6FF;
+    --main-black-100: #C5CEFD;
+    --main-black-200: #98A6F9;
+    --main-black-300: #7084F2;
+    --main-black-400: #5067E9;
+    --main-black-500: #3851DD;
+    --main-black-600: #2740CD;
+    --main-black-700: #1B32B8;
+    --main-black-800: #1328A0;
+    --main-black-900: #0E2087;
+
+    --point-pink:#FF00E4;
+    --point-pink-0: #FFF5FE;
+    --point-pink-100: #FDC5F7;
+    --point-pink-200: #F998EF;
+    --point-pink-300: #F270E5;
+    --point-pink-400: #E950DA;
+    --point-pink-500: #DD38CC;
+    --point-pink-600: #CD27BC;
+    --point-pink-700: #B81BA8;
+    --point-pink-800: #A01392;
+    --point-pink-900: #870E7B;
+
+    --point-purple:#B400FF;
+    --point-purple-0: #FCF5FF;
+    --point-purple-100: #ECC5FD;
+    --point-purple-200: #DC98F9;
+    --point-purple-300: #CB70F2;
+    --point-purple-400: #BB50E9;
+    --point-purple-500: #AC38DD;
+    --point-purple-600: #9B27CD;
+    --point-purple-700: #891BB8;
+    --point-purple-800: #7613A0;
+    --point-purple-900: #630E87;
+
+
+
+
+    /* font-weight */
+    --font-strong:700;
+    --font-normal:400;
+
+    /* line-height */
+    --base-line-height:120%;
+    --text-line-height:140%;
+
+    /* spacing */
+    --space-normal:1rem;
+    --space-x-small:0.5rem;
+    --space-2x-small:0.25rem;
+    --space-x-large:2rem;
+    --space-2x-large:3rem;
+    --space-3x-large:6rem;
+    --space-6x-large:9rem;
+
+    /* semantic color */
+    --color-inacitve:#D9D9D9;
+
+    /* device width */
+    --device-tab : 1440px;
+    --device-mobile : 786px;
+
+}
+html{
+    font-size:var(--basic-font-pc);
+    font-family: 'Pretendard',sans-serif;
+    line-height: var(--base-line-height);
+}
+h1{
+    font-size: 1.6rem;
+    font-weight: var(--font-strong);
+}
+h2{
+    font-size: 1.4rem;
+    font-weight: var(--font-strong);
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: var(--font-strong);
+}
+h4{
+    font-size:1rem;
+    font-weight: var(--font-strong);
+}
+p{
+    font-size: 1rem;
+    line-height: var(--text-line-height);
+}
+.b2{
+    font-size:0.9rem;
+    color: #fff;
+}
+.detail{
+    font-size:0.8rem;
+}
+
+.point-h1{
+    font-family: "vitro-bold", system-ui;
+    color: #fff;
+    text-align: center;
+}
+
+.common-frame{
+    width:auto;
+    margin: 0 3rem;
+}
+.common-frame2{
+    width:1440px;
+    margin: 0 auto;
+}
+.logo img {
+    height: 2.6rem;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+}
+.btn-all-menu img{height:1.2rem;}
+
+.slider-container {
+  overflow-x: auto;
+  /* 슬라이드처럼 멈춤 */
+  /* scroll-snap-type: x mandatory;  */
+  -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
+  white-space: nowrap;
+  display: flex;
+}
+
+.slider-track {
+  display: flex;
+}
+
+/* 웹킷 계열의 브라우저 -> 크롬 엣지 사파리 */
+::-webkit-scrollbar{
+    width:0.25rem;
+    height:0.25rem;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--point-purple-0);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--point-purple-300);
+    /* border-radius: 5px; */
+}
+
+@media (max-width:1440px){
+    html{
+        font-size: var(--basic-font-tab);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size:var(--basic-font-mobile);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 1rem;
+    }
+}

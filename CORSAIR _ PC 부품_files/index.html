@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://brands.corsair.com/sites/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Shared domain</title>
+	<script>
+		// Below function will use to get exipiration time
+		function getExpirationTime() {
+			var expires = "";
+			var days = 730; // set value equals to 2 years as _ga id cookie is persisted for 2 years 
+			var date = new Date();
+			date.setTime(date.getTime() + (730 * 24 * 60 * 60 * 1000));
+			return ("; expires=" + date.toUTCString());
+		}
+
+		// Below function will be executed when any corsair site-brands will send GAID to common domain
+		function displayMessage(evt) {
+			// When you see any domain which is not in the below list and you want to allow that domain to send cookie value to common domain,
+			// just add that domain in the below list
+			var allowedDomains = ["https://www.corsair.com", "https://www.gamersensei.com", "https://www.originpc.com", "https://www.elgato.com", "https://scufgaming.com", "https://checkout.corsair.com", "https://live-pwa.corsair.com", "https://checkout.elgato.com", "https://live-pwa.elgato.com", "https://checkout.fanatec.com", "https://live-pwa.fanatec.com", "https://www.fanatec.com", "https://marketplace.elgato.com", "https://account.elgato.com", "https://www.drop.com", "https://pay.drop.com", "https://help.corsair.com"];
+			if (allowedDomains.includes(evt.origin)) {
+				var data = JSON.parse(event.data);
+				if (data.allowedSharing) {
+					var data = JSON.parse(event.data);
+					if (data.sharedEmail) {
+						document.cookie = "sharedEmail" + "=" + (data.sharedEmail || "") + getExpirationTime() + "; path=/; domain=corsair.com; SameSite=None; Secure";
+					}
+					else {
+						document.cookie = "sharedCookie" + "=" + (data.sharedCookie || "") + getExpirationTime() + "; path=/; domain=corsair.com; SameSite=None; Secure";
+						// We'll remove sharedEmail cookie whenever we'll get only sharedCookie from parent domain
+						document.cookie = "sharedEmail= ; expires = Thu, 01 Jan 1970 00:00:00 GMT" + "; path=/; domain=corsair.com; SameSite=None; Secure";
+					}
+				}
+			}
+		}
+		window.addEventListener("message", displayMessage, false);
+	</script>
+</head>
+
+<body>
+	<h1>Shared domain</h1>
+	<script>
+		// Below code block will be executed when common domain iFrame will load in the website
+		// Below code will read if common cookie available and then send it to corsair brand websites.
+		window.onload = function () {
+			var getCookieValue = document.cookie.match('(^|;)\\s*' + "sharedCookie" + '\\s*=\\s*([^;]+)')?.pop() || '';
+			var getEmailValue = document.cookie.match('(^|;)\\s*' + "sharedEmail" + '\\s*=\\s*([^;]+)')?.pop() || '';
+			var gaid = getCookieValue === "" ? "" : getCookieValue;
+			var email = getEmailValue === "" ? "" : getEmailValue;
+			var json = {sharedCookie: gaid, sharedEmail: email};
+			console.log("cookie values are:");
+			console.log(json);
+			window.parent.postMessage(json, '*');
+			// Below code is used to just update the cookie expiration time when cookie is already available in common domain 
+			getCookieValue === "" ? "" : document.cookie = "sharedCookie" + "=" + (getCookieValue || "") + getExpirationTime() + "; path=/; domain=corsair.com; SameSite=None; Secure";
+			getEmailValue === "" ? "" : document.cookie = "sharedEmail" + "=" + (getEmailValue || "") + getExpirationTime() + "; path=/; domain=corsair.com; SameSite=None; Secure";
+			getCookieValue === "" ? "" : console.log("cookie sent from " + window.location + " is: " + gaid);
+			getEmailValue === "" ? "" : console.log("email sent from " + window.location + " is: " + email);
+		};
+	</script>
+
+
+</body></html>
