@@ -194,3 +194,7 @@ header:after{
     flex-direction: column;
     gap: 4.5rem;
 }
+
+@media (max-width:1440px){
+    .pc{display: none;}
+}

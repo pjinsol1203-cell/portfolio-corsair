@@ -1,5 +1,9 @@
 :root{
 
+    --card-bg: rgba(255, 255, 255, 0.212);
+    --text-light: #fff;
+    --text-muted: #ccc;
+
     /* basic size 1rem */
     --basic-font-pc:20px;
     --basic-font-tab:18px;

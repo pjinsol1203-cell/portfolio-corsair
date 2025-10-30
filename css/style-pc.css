@@ -87,10 +87,90 @@ main{
     margin: 1.5rem 0rem;
 }
 
+.support-main-text{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.support-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.support-card {
+  flex: 1 1 300px;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.support-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.support-header .more {
+  color: var(--point-pink);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.support-card ul li {
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-form input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 16px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.order-form input::placeholder {
+  color: #aaa;
+}
+
+.order-form button {
+  background: var(--point-pink);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.notice {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.8rem;
+  line-height: 1.4;
+}
+
 .support{
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0 auto;
-    }
+    margin-bottom: 11rem;
+}

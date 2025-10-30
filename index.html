@@ -347,12 +347,12 @@
                 <h4>카드사 혜택</h4>
             </div>
         </div>
-        <div>
+        <div>  <!--  가이드txt  -->
             <h1 class="point-h1">Guides and Useful Information</h1>
             <a href="#"><p class="more guide-more">더 알아보기</p></a>
         </div>
 
-        <div>
+        <div>  <!--   가이드 -->
             <figure>
                 <a href="#">
                 <img src="./img/guide-main.jpg" alt="가이드 및 사용방법 보러가기">
@@ -361,41 +361,54 @@
             <p>3D 아티스트와 크리에이터를 위한 최고의 렌더링 PC 구축 방법</p>
         </div>
 
-        <h1 class="point-h1">Support</h1>
-
-        <div class="support-txt">
-            <div class="qna">
+    <!-- support -->
+    <section class="support">
+        <h1 class="point-h1 support-main-text">Support</h1>
+        <div class="support-grid">
+      
+            <!-- 자주 묻는 질문 -->
+            <div class="support-card">
+                <div class="support-header">
                 <h3>자주 묻는 질문</h3>
-                <a href="#"><p class="more">more</p></a>
+                <a href="#" class="more">MORE</a>
+                </div>
+                <ul>
+                <li><a href="#">키보드 문제 해결 가이드: 일반적인 문제에 대한 빠른 솔루션</a></li>
+                <li><a href="#">iCUE:ASUS Armoury Crate가 CORSAIR RGB DRAM을 제어하도록 허용하는 방법</a></li>
+                <li><a href="#">iCUE: iCUE를 새로 설치하는 방법</a></li>
+                <li><a href="#">RAM: 메모리 문제를 해결하기 위해 RAM 모듈을 테스트하는 방법</a></li>
+                </ul>
             </div>
-        </div>
 
-        <div class="support-box">
-            <p>키보드 문제 해결 가이드 : 일반적인 문제에 대한 빠른 솔루션</p>
-            <p>iCUE:ASUS Armourny Crate가 CORSAIR RGB DRAM을 제어하도록 허용하는 방법</p>
-            <p>iCUE: iCUE를 새로 설치하는 방법</p>
-            <p>RAM: 메모리 문제를 해결하기 위해 RAM 모듈을 테스트하는 방법</p>
-        </div>
-            
-        <div class="order-box">
-            <h3>주문 상태</h3>
-            <div>
-                <div class="detail"><p>Order number</p></div>
-                <div class="detail"><p>E-mail</p></div>
-                <div><p>확인하기</p></div>
-                <p class="detail">주문번호 (C로 시작)와 체크아웃 시 사용한 이메일 주소를 입력하세요.</p>
+            <!-- 주문 상태 -->
+            <div class="support-card">
+                <div class="support-header">
+                <h3>주문 상태</h3>
+                </div>
+                <form class="order-form">
+                <input type="text" placeholder="Order number">
+                <input type="email" placeholder="E-mail">
+                <button type="submit">확인하기</button>
+                <p class="notice">주문번호(C로 시작)와 체크아웃 시 사용한 이메일 주소를 입력하세요. </p>
+                </form>
             </div>
-        </div>
 
-            <div class="service-box">
+            <!-- 고객 서비스 -->
+            <div class="support-card">
+                <div class="support-header">
                 <h3>고객 서비스</h3>
-                <a href="#"><p class="more">more</p></a>
-            </div> 
-            <div class="service-txt">
-
+                <a href="#" class="more">MORE</a>
+                </div>
+                <ul>
+                <li><a href="#">Corsair 제한 보증</a></li>
+                <li><a href="#">일련 번호 또는 로트 코드 찾기</a></li>
+                <li><a href="#">결함이 있는 제품을 교체하려면 어떻게 해야 하나요?</a></li>
+                <li><a href="#">예비 부품, USB 무선 동글 또는 키캡 교체품 주문 방법</a></li>
+                <li><a href="#">Corsair System 제품 보증</a></li>
+                </ul>
             </div>
-        
+        </div>
+    </section>
 
-    </div>
 </body>
 </html>
