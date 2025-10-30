@@ -15,7 +15,7 @@ header.pc{
 }
 
 .header-menu{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.475);
     padding: .5rem 1rem;
     border-radius: 5rem;
     display: flex;

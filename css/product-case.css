@@ -1,0 +1,60 @@
+html{
+    color: #fff;
+    background-color: var(--main-black);
+}
+
+.main-txt{
+    margin-top: 9rem;
+    margin-bottom: 3.5rem;
+}
+
+/* header2-product-category */
+
+.header2-product-category{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8,minmax(100px,1fr));
+    background-color: rgba(255, 255, 255, 0.212);
+    text-align: center;
+    padding: 0.3rem 0rem;
+}
+
+.header2-product-category>a:hover{
+    background-color: var(--point-pink);
+    cursor: pointer;
+}
+
+/* category-select */
+.caregory-select{
+    text-align: center;
+}
+
+.caregory-select a{
+    padding: 0.2rem;}
+
+.case-list{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,1fr));
+    /* 5개의 컬럼, 너비 최소 100px, 최대 1fr (1:1:1비율로 만들겠다는 뜻 */
+    gap: 3rem 1rem;
+}
+
+.case-dl dt{
+    font-weight: bold;
+}
+
+.case-list img{
+    width: 50%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+}
+
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.detail h1{
+    grid-column: 1/3;
+}
