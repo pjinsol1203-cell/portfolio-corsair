@@ -1,0 +1,9 @@
+@media (max-width:1440px){
+    .pc{display: none;}
+    .product-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6rem 1rem;
+    padding-top: 11rem;
+    }
+}

@@ -4,57 +4,128 @@ html{
 }
 
 .main-txt{
-    margin-top: 9rem;
-    margin-bottom: 3.5rem;
+  margin-top: 9rem;
+  margin-bottom: 3.5rem;
 }
 
 /* header2-product-category */
-
-.header2-product-category{
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(8,minmax(100px,1fr));
-    background-color: rgba(255, 255, 255, 0.212);
-    text-align: center;
-    padding: 0.3rem 0rem;
+.header2-product-category {
+  grid-template-columns: repeat(8,minmax(100px,1fr));
+  background-color: var(--point-purple);
+  text-align: center;
+  position: sticky;
+  left: 0;
+  top: 4.25rem;
+  z-index: 1000;
 }
 
-.header2-product-category>a:hover{
-    background-color: var(--point-pink);
-    cursor: pointer;
+.h2pcate {
+  font-size: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.h2pcate li {
+flex: 1;
+padding: 0.3rem 0;
+}
+
+.h2pcate li:hover {
+background: var(--point-pink);
+cursor: pointer;
 }
 
 /* category-select */
 .caregory-select{
-    text-align: center;
+  text-align: center;
 }
 
 .caregory-select a{
-    padding: 0.2rem;}
-
-.case-list{
-    display: grid;
-    grid-template-columns: repeat(4,minmax(100px,1fr));
-    /* 5개의 컬럼, 너비 최소 100px, 최대 1fr (1:1:1비율로 만들겠다는 뜻 */
-    gap: 3rem 1rem;
+  padding: 0.2rem;
 }
 
-.case-dl dt{
-    font-weight: bold;
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 6rem 1rem;
+  padding-top: 11rem;
 }
 
-.case-list img{
-    width: 50%;
-    aspect-ratio: 1/1.5;
-    object-fit: cover;
+
+    
+/*  제품 카드 */
+.product-list {
+text-align: center;
+border: 0.05rem solid transparent;
+border-radius: 0.3rem;
+border: 0.1rem solid transparent;
+padding: 2rem 0;
+}
+.product-list:hover {
+border: 2px solid var(--point-pink);
 }
 
-.detail{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.product-list img{
+height: 15rem;
+margin-bottom: 2rem;
 }
 
-.detail h1{
-    grid-column: 1/3;
+.product-list h3{
+margin-top: 2rem;
 }
+
+/* 컬러칩 영역 */
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+/* 컬러칩 스타일 */
+.color-chip {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.2rem;
+  cursor: pointer;
+  border: 0.1rem solid #ccc; /*비활성화 상태일 때 회색 테두리 */
+  transition: border 0.3s, box-shadow 0.3s, transform 0.3s;
+  margin-bottom: 1rem;
+}
+
+.color-chip.selected {
+  border: 0.1rem solid var(--point-pink);
+  box-shadow: 0 0 6px rgba(255, 105, 180, 0.6);}
+
+.color-chip[style="background-color:#ffffff"]
+{border: 0.1rem solid var(--point-pink);}
+
+.color-chip:hover {
+  transform: scale(1.2);
+}
+.color-chip.active {
+  border: 0.1rem solid #fff;
+}
+
+.product-list:not(:has(.color-chip.selected)) .color-chip[style*="background-color:#ffffff"] {
+border: 0.1rem solid var(--point-pink);
+}
+
+.product-list .color-chip[style="background-color:#ffffff"]:not(.selected)
+{border: 0.1rem solid #ccc;}
+
+.color-chip.dual-chip {
+/* background: linear-gradient(방향, 색상1, 색상2); */
+background: 
+linear-gradient(90deg, 
+var(--color1) 50%, 
+var(--color2) 50%);
+}
+
+
+ 
+
