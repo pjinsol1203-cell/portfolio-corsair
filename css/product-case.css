@@ -126,6 +126,58 @@ var(--color1) 50%,
 var(--color2) 50%);
 }
 
+.product-more{
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
 
+/* how to correct */
+.how-to-correct .coreect-txt .point {
+  margin-bottom: 1rem;
+}
+
+.how-to-correct{
+  /* display: flex; */
+  background: url(../img/product_page/correct_BG.jpg) no-repeat 50% 50% / 0 auto;
+  /* gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem; */
+}
  
+.correct{
+  display: flex;
+  margin-bottom: 7.5rem;
+}
 
+.correct figure{
+  padding-bottom: 2rem;
+}
+
+.correct-txt{
+padding: 0.5rem;
+text-align: center;}
+
+.correct-txt>.point{
+  padding-bottom: 1rem;}
+
+.correct-txt>.more{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.guide-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 6rem 1rem;
+  padding-top: 3.5rem;
+}
+
+.guide-txt-box{
+  background-color: #fff;
+  height: 7.65rem;
+  color: #000;
+  padding: 1rem;
+}
+
+.guide-txt-box>p{padding: 1rem 0;}

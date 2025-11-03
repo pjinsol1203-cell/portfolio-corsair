@@ -101,15 +101,13 @@ p{
 }
 .b2{
     font-size:0.9rem;
-    color: #fff;
 }
 .detail{
     font-size:0.8rem;
 }
 
-.point-h1{
+.point{
     font-family: "vitro-bold", system-ui;
-    color: #fff;
     text-align: center;
 }
 
