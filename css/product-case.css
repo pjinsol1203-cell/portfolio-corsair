@@ -136,18 +136,11 @@ var(--color2) 50%);
 .how-to-correct .coreect-txt .point {
   margin-bottom: 1rem;
 }
-
-.how-to-correct{
-  /* display: flex; */
-  background: url(../img/product_page/correct_BG.jpg) no-repeat 50% 50% / 0 auto;
-  /* gap: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem; */
-}
  
 .correct{
   display: flex;
   margin-bottom: 7.5rem;
+  background: url(../img/product_page/correct_BG.jpg) no-repeat 50% 50% / cover;
 }
 
 .correct figure{
@@ -168,7 +161,7 @@ text-align: center;}
 
 .guide-list{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 6rem 1rem;
   padding-top: 3.5rem;
 }
