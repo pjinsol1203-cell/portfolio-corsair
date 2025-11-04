@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CORSAIR-PC부품-케이스</title>
-</head>
+
  <!-- 파비콘 설정 -->
     <link rel="icon" href="./img/fabicon.png" type="image/png">
 
@@ -26,7 +26,7 @@
 
  <!-- function -->
 <script src="./js/header.js"></script>
-
+</head>
 <body>
   <!-- header -->
     <header class="pc">
@@ -240,6 +240,17 @@
     <option href="#">iCUE RGB 케이스</option>
 </select>
 
+<!-- title -->
+<h1 class="point case-main-title">CORSAIR PC CASE</h1>
+<p class="case-sub-title">CORSAIR PC 케이스로 PC를 멋진 공간으로 연출해 보세요. SFF부터 슈퍼 타워까지 다양한 크기와<br>세련되고 미니멀한 디자인부터 개성 넘치는 스타일까지 원하는 디자인을 선택할 수 있습니다.</p>
+
+<!-- main banner -->
+<div class="main-banner-container">
+  <div class="main-banner"></div>
+  <div class="main-banner2"></div>
+  <div class="main-banner3"></div>
+</div>
+
 <!-- product list -->
   <div class="product-container common-frame">
     <!-- 제품 1 -->
@@ -444,52 +455,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- how to correct -->
 
-  <div class="common-frame how-to-correct">
-    <h1 class="point">How to correct</h1>
-    <div class="correct"> 
-      <div>
-        <figure>
-          <img src="./img/product_page/correct1.png" alt="가장 적합한 PC 케이스 사이즈 찾기">
-        </figure>
-        <div class="correct-txt">
-          <p class="point">가장 적합한 PC 케이스 사이즈 찾기</p>
-          <p>케이스 크기는 마더보드, GPU 및 나머지 부품의 크기에 적합해야 합니다. <br>
-          케이스는 냉각, 전면 I/O, 책상을 차지하는 공간에도 영향을 미칩니다.</p>
-          <p class="more detail">자세히 알아보기</p>
-        </div>
-      </div>
-      
-      <div>
-        <figure>
-          <img src="./img/product_page/correct2.png" alt="공기 흐름 최적화 및 소음 감소">
-        </figure>
-        <div class="correct-txt">
-          <p class="point">공기 흐름 최적화 및 소음 감소</p>
-          <p>케이스 공기 흐름으로 인해 스로틀링 성능 손실이 발생하는<br>
-          높은 소음의 컴퓨터와 저소음 고성능 컴퓨터가 차별화됩니다.</p>
-          <p class="more detail">자세히 알아보기</p>
-        </div>
-      </div>
-      
-    <div>
+<div class="how-to-correct">
+  <h1 class="point correct-title">How to correct</h1>
+  <div class="correct"> 
+    <div class="correct-box">
       <figure>
-        <img src="./img/product_page/correct3.png" alt="CORSAIR 케이스 빌더 특장점">
+        <img src="./img/product_page/correct1.png" alt="가장 적합한 PC 케이스사이즈 찾기">
       </figure>
+      <div class="correct-txt">
+        <p class="point">가장 적합한 PC 케이스 사이즈 찾기</p>
+        <p>케이스 크기는 마더보드, GPU 및 나머지 부품의 크기에 적합해야 합니다.
+        케이스는 냉각, 전면 I/O, 책상을 차지하는 공간에도 영향을 미칩니다.</p>
+        <p class="more detail">자세히 알아보기</p>
+      </div>
+    </div>
+    
+    <div class="correct-box">
+      <figure>
+        <video src="./video/How-to-correct.webm" autoplay muted loop ></video>
+      </figure>
+      <div class="correct-txt">
+        <p class="point">공기 흐름 최적화 및 소음 감소</p>
+        <p>케이스 공기 흐름으로 인해 스로틀링 성능 손실이 발생하는<br>
+        높은 소음의 컴퓨터와 저소음 고성능 컴퓨터가 차별화됩니다.</p>
+        <p class="more detail">자세히 알아보기</p>
+      </div>
+    </div>
 
+    <div class="correct-box">
+      <figure>
+        <img src="./img/product_page/correct3.png" alt="CORSAIR 케이스 빌더  특장점">
+      </figure>
       <div class="correct-txt">
         <p class="point">CORSAIR 케이스 빌더 특장점</p>
         <p>케이스는 팬 마운트, 케이블 배선 및 기타 작업을 간소화하는<br>
         혁신적인 기능으로 조립 경험에 큰 영향을 미칠 수 있습니다.</p>
-        <p class="more detail">자세히 알아보기</p>
+          <p class="more detail">자세히 알아보기</p>
       </div>
     </div>
+  </div>
 </div>
 
 <!-- Guides -->
-<div class="common-frame">
-  <h1 class="point">Guides</h1>
-  <div class="guide-list">
-    <div>
+<h1 class="point">Guides</h1>
+<div class="common-frame guide-wrapper">
+  <div class="guide-list ">
+    <div class=" ">
         <a href="#">
           <img src="./img/product_page/case_how to1.webp" alt="PC 케이스 101: 사이즈 및 레이아웃" class="guide-img" />
         </a>
@@ -499,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to2.webp" alt="PC 케이스 102: 냉각 및 소음" class="guide-img" />
       </a>
@@ -509,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to3.webp" alt="PC 케이스 103: 빌더 특장점" class="guide-img" />
       </a>
@@ -519,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to4.webp" alt="내 케이스에 적합한 마더보드와 쿨러가 무엇인가요?" class="guide-img" />
       </a>
@@ -529,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to5.webp" alt="ATX VS MICROATX VS MINI-ITX: 차이점이 무엇인가요?" class="guide-img" />
       </a>
@@ -539,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to6.webp" alt="전면 패널 커넥터를 마더보드에 연결하려면
         어떻게 해야 합니까?" class="guide-img" />
@@ -550,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to7.png" alt="CORSAIR가 2500D/X 및 6500D/X 케이스 에서 역방향 마더보드를 지원하는 방법" class="guide-img" />
       </a>
@@ -560,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <div>
+    <div class=" ">
       <a href="#">
         <img src="./img/product_page/case_how to8.webp" alt="CORSAIR 2500 SERIES 케이스: 알아야 할 모든 사항" class="guide-img" />
       </a>
@@ -568,8 +579,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="detail">BLOG</p>
         <p>CORSAIR 2500 SERIES 케이스: 알아야 할 모든 사항</p>
       </div>
-    </div>
+    <div class="swiper-pagination"></div>
   </div>
 </div>
+
+
+
 </body>
 </html>

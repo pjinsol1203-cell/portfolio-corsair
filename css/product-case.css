@@ -37,6 +37,45 @@ background: var(--point-pink);
 cursor: pointer;
 }
 
+/* title */
+.case-main-title{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.case-sub-title{
+  text-align: center;
+  line-height: 160%;
+}
+
+/* main banner */
+.main-banner-container{
+  display: flex;
+  width: auto;
+  height: 900px;
+}
+
+.main-banner{
+  background: url(../img/product_page/case-main-banner1.png) no-repeat center/cover;
+}
+
+.main-banner2{
+  background: url(../img/product_page/case-main-banner2.png) no-repeat center/cover;
+}
+
+.main-banner3{
+  background: url(../img/product_page/case-main-banner3.png) no-repeat center/cover;
+}
+
+.main-banner,
+.main-banner2,
+.main-banner3 {
+  flex: 1;
+  height: 100%;
+}
+
+
+
 /* category-select */
 .caregory-select{
   text-align: center;
@@ -133,44 +172,68 @@ var(--color2) 50%);
 }
 
 /* how to correct */
-.how-to-correct .coreect-txt .point {
+.correct-title{
+  margin-bottom: 5rem;
+}
+
+.correct {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    gap: 2rem;
+    margin-bottom: 7.5rem;
+    padding: 2rem 2rem;
+    background: url(../img/product_page/correct_BG.jpg) no-repeat center/cover;
+}
+
+.correct-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+}
+
+.correct figure img, .correct figure video {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.correct-txt .point {
   margin-bottom: 1rem;
 }
- 
-.correct{
-  display: flex;
-  margin-bottom: 7.5rem;
-  background: url(../img/product_page/correct_BG.jpg) no-repeat 50% 50% / cover;
+
+.correct-txt .more {
+  margin-top: 1rem;
 }
 
-.correct figure{
-  padding-bottom: 2rem;
-}
-
-.correct-txt{
-padding: 0.5rem;
-text-align: center;}
-
-.correct-txt>.point{
-  padding-bottom: 1rem;}
-
-.correct-txt>.more{
-  text-align: center;
-  padding-top: 1rem;
-}
-
+/* Guides */
 .guide-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 6rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  gap: 3rem 1rem;
   padding-top: 3.5rem;
 }
 
 .guide-txt-box{
-  background-color: #fff;
+  /* background-color: #000; */
   height: 7.65rem;
-  color: #000;
+  color: #fff;
   padding: 1rem;
+  flex-grow: 1;
 }
 
 .guide-txt-box>p{padding: 1rem 0;}
+
+.guide-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+
