@@ -58,9 +58,9 @@
     --text-line-height:140%;
 
     /* spacing */
-    --space-normal:1rem;
     --space-x-small:0.5rem;
     --space-2x-small:0.25rem;
+    --space-normal: 1rem;
     --space-x-large:2rem;
     --space-2x-large:3rem;
     --space-3x-large:6rem;

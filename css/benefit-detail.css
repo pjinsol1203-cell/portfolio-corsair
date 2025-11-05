@@ -1,18 +1,215 @@
+html{
+    color: #fff;
+    text-align: center;
+}
+
+.header2 {
+  grid-template-columns: repeat(6,minmax(100px,1fr));
+  background-color: var(--point-purple);
+  text-align: center;
+  position: sticky;
+  left: 0;
+  top: 4.25rem;
+  z-index: 1000;
+}
+
+.h2card {
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.h2card li {
+flex: 1;
+padding: 0.3rem 0;
+}
+
+.h2card li:hover {
+background: var(--point-pink);
+cursor: pointer;
+}
+
+/* card-benefit-img-size */
+.card-benefit>div{
+    height: 45rem;
+}
+
+.main-banner{
+    background: url(../img/benefit/benefit-main-banner.jpg) no-repeat center / cover;
+    margin-top: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+}
+
+.main-banner>h1{
+    line-height: 160%;
+    font-size: var(--space-2x-large);
+}
+
+.card-benefit h1{
+    font-size: var(--space-x-large);
+}
+
+.card-benefit h4{
+    font-size: 1.2rem;
+    width: 30rem;
+    padding: 1rem;
+    margin: 0 auto;
+    line-height: 140%;
+}
+
+.card-benefit>div>p{
+    margin-bottom: var(--space-normal);
+}
+
+.card-benefit .detail{
+    margin-bottom: var(--space-2x-small);
+}
+
+/* card1 */
 .card1{
-    background: url(../img/benefit/card1.jpg)
+    background: url(../img/benefit/card1.jpg) no-repeat 50% 50% / cover;
 }
+
+.card-benefit .card1 > h1{
+    padding-top: 2.5rem;
+}
+
+.card-benefit .card1 h4{
+    margin-top: 18rem;
+    margin-bottom: 2rem;
+    background-color: #C61E32;
+}
+
+/* card2 */
 .card2{
-    background: url(../img/benefit/card2.jpg);
+    background: url(../img/benefit/card2.jpg) no-repeat center / cover;
 }
+
+.card-benefit .card2 h1{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.card-benefit>.card2>h4{
+    background-color: #03355F;
+    margin-bottom: 15rem;
+}
+
+
+/* card3 */
 .card3{
-    background: url(../img/benefit/card3.jpg);
+    background: url(../img/benefit/card3.jpg) no-repeat center / cover;
 }
+
+.card-benefit .card3 h1{
+    padding-top: 8.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-benefit>.card3>h4{
+    background-color: #195f3379;
+    margin-bottom: 17rem;
+}
+
+.card3-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* card4 */
 .card4{
-    background: url(../img/benefit/card4.jpg);
+    background: url(../img/benefit/card4.jpg) no-repeat center / cover;
 }
+
+.card-benefit .card4 h1{
+    padding-top: 8.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-benefit>.card4>h4{
+    background-color: #a0460e7e;
+    margin-bottom: 17rem;
+}
+
+/* card5 */
 .card5{
-    background: url(../img/benefit/card5.jpg);
+    background: url(../img/benefit/card5.jpg) no-repeat center / cover;
 }
+
+.card-benefit .card5 h1{
+    padding-top: 8.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-benefit>.card5>h4{
+    background-color: #ad8a0d71;
+    margin-bottom: 19rem;
+}
+
 .card6{
-    background: url(../img/benefit/card6.jpg);
+    background: url(../img/benefit/card6.jpg) no-repeat center / cover;
+}
+
+.card-benefit .card6 h1{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.card-benefit>.card6>h4{
+    background-color: rgba(255, 0, 230, 0.519);
+    margin-bottom: 2rem;
+}
+
+.card-benefit .card6 .benefit-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    width: 40rem;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.55), 0 0 36px rgba(208, 99, 255, 0.18), 0 0 0 10px rgba(255, 255, 255, 0.12);
+}
+
+.card-benefit .card6 .benefit-grid > li{
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-benefit .card6 .benefit-grid > li:nth-child(4n){
+    border-right: 0;
+}
+
+.card-benefit .card6 .benefit-grid > li:nth-child(-n+4){
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.card-container > div > h4{
+    margin: 0 auto;
+}
+
+.card-benefit .card6 .detail{
+    margin-bottom: 0;
+}
+
+.card-benefit .card6 .benefit-grid{
+    margin-bottom: 1rem;
+}
+
+.card-benefit .card6 .point{
+    margin-top: 8rem;
+    line-height: 160%;
 }
