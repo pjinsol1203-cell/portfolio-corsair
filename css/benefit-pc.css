@@ -102,7 +102,7 @@
 
 .benefit-btn:hover {
   background-color: var(--point-purple);
-  color: #03355F;
+  color: #fff;
 }
 
 /* 반응형 */

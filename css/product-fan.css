@@ -1,0 +1,47 @@
+html{
+    background-color: var(--main-black);
+    color: #fff;
+}
+
+.case-main-title{
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3.5rem;
+}
+
+.case-sub-title{
+    text-align: center;
+}
+
+.thumb-list button{
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    border: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* 썸네일 이미지: 흰 배경 제거 및 박스에 맞게 표시 */
+.thumb-list .thumb img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: transparent;
+}
+
+/* 선택된 썸네일 강조 */
+.thumb-list .thumb.active{
+    border-color: var(--point-pink);
+}
+
+.product-card{
+    text-align: center;
+}
+
+.fan-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6rem;
+}

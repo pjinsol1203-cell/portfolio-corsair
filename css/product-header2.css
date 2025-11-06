@@ -1,0 +1,28 @@
+/* header2-product-category */
+.header2-product-category {
+  grid-template-columns: repeat(8,minmax(100px,1fr));
+  background-color: var(--point-purple);
+  text-align: center;
+  position: sticky;
+  left: 0;
+  top: 4.1rem;
+  z-index: 1000;
+}
+
+.h2pcate {
+  font-size: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.h2pcate li {
+flex: 1;
+padding: 0.3rem 0;
+}
+
+.h2pcate li:hover {
+background: var(--point-pink);
+cursor: pointer;
+}

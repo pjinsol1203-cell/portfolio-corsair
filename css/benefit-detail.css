@@ -214,4 +214,6 @@ cursor: pointer;
     line-height: 160%;
 }
 
-/* test */
+.card-benefit{
+    margin-bottom: 9.5rem;
+}
