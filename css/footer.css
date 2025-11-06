@@ -1,5 +1,6 @@
 footer{
   color: #fff;
+  background: url(../img/footer-BG.jpg) no-repeat center / cover;
 }
 
 .login{
@@ -71,9 +72,14 @@ footer{
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 .footer_rbt-txt{
   display: flex;
   gap: 1rem;
+}
+
+.l-ft, .r-ft{
+  margin-top: 2rem;
 }
