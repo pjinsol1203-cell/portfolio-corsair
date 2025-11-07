@@ -1,6 +1,38 @@
-footer{
-  color: #fff;
-  background: url(../img/footer-BG.jpg) no-repeat center / cover;
+footer {
+color: #fff;
+background: url(../img/footer-BG.jpg) no-repeat center / cover;
+/* max-width: 100vw !important; */
+}
+
+
+.footer-wrap{
+  width: auto;
+  margin-left: 0;
+}
+
+@media (max-width:1440px){
+  footer{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  footer .common-frame.footer,
+  footer .common-frame{
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  footer .footer_bt-txt{
+    padding: 0 3rem !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
+  footer .gradient-bar{
+    width: 100% !important;
+  }
 }
 
 .login{
@@ -47,9 +79,12 @@ footer{
   height: 1.4rem;
 }
 
-.r-ft{
-  display: flex;
-  gap: 8rem;
+.r-ft {
+    display: flex;
+    gap: 1rem;
+}
+.r-ft>div{
+  flex:1;
 }
 
 .r-ft>div>ul>li{
@@ -80,6 +115,72 @@ footer{
   gap: 1rem;
 }
 
-.l-ft, .r-ft{
-  margin-top: 2rem;
+.l-ft, .r-ft {
+    margin-top: 2rem;
+    flex: 1;
+}
+
+/* 1440px 이하에서 footer 전체 너비 강제 적용 */
+@media (max-width:1440px){
+  body {
+    overflow-x: hidden;
+  }
+  
+  footer {
+    display: block !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  footer > .common-frame,
+footer > .common-frame, footer > .common-frame.footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    flex-direction: column;
+}
+  
+  footer > .footer_bt-txt {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width:768px){
+  .r-ft .detail{
+    display: none;
+  }
+  footer > .footer_bt-txt {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.r-ft{
+  display: none;;
+}
+  .footer_rbt-txt {
+    display: grid;
+    gap: 1rem;
+    justify-content: start;
+    flex-direction: column;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 2rem;
+}
 }

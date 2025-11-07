@@ -192,3 +192,149 @@ header:after{
     flex-direction: column;
     gap: 4.5rem;
 }
+
+
+@media (max-width: 1440px) {
+  .header.pc {
+    display: none;
+  }
+
+  .header-smart {
+    display: block;
+  }
+
+  .hidden-gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .common-frame {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hg1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .hg1 .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .btn-close img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .hg2 {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+  }
+
+  .slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .slide-track {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .slide-track a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  .slide-track a:hover {
+    color: var(--point-yellow, #ffd000);
+  }
+
+  .slide-track a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--point-yellow, #ffd000);
+  }
+
+  .hg3 {
+    padding: 20px 0 80px;
+  }
+
+  .gnb-smart > li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .gnb-smart > li > a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+  }
+
+  .gnb-smart > li > a:hover {
+    color: var(--point-yellow, #ffd000);
+  }
+
+  .gnb-smart ul {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: none;
+  }
+
+  .gnb-smart ul li a {
+    color: #ccc;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .gnb-smart ul li a:hover {
+    color: var(--point-yellow, #ffd000);
+  }
+}
+
+/* ✅ 480px 이하 추가 보정 */
+@media (max-width: 480px) {
+  .hg1 .logo img {
+    width: 120px;
+  }
+
+  .slide-track {
+    gap: 1.2rem;
+  }
+
+  .gnb-smart > li > a {
+    font-size: 1rem;
+  }
+
+}

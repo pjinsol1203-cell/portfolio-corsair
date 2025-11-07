@@ -16,4 +16,21 @@ document.addEventListener("DOMContentLoaded",()=>{
         gnbContainer.classList.remove("on")
         gnbContainerSectionArray.forEach(section=>section.classList.remove("on"))
     })
+
+    // 모바일/태블릿 메뉴 열기/닫기
+    const btnAllMenu = document.querySelector(".btn-all-menu")
+    const btnClose = document.querySelector(".btn-close")
+    const hiddenGnb = document.querySelector(".hidden-gnb")
+
+    if(btnAllMenu && hiddenGnb){
+        btnAllMenu.addEventListener("click",()=>{
+            hiddenGnb.classList.add("on")
+        })
+    }
+
+    if(btnClose && hiddenGnb){
+        btnClose.addEventListener("click",()=>{
+            hiddenGnb.classList.remove("on")
+        })
+    }
 })

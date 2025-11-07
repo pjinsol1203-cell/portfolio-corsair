@@ -2,4 +2,16 @@
     .h2pcate {
     font-size: 0.7rem;
     }
+
+    .support-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+    .promotional-deals {
+    grid-template-columns: repeat(2,auto);
+    gap: 1rem;
+}
 }

@@ -13,4 +13,22 @@
     .guide-wrapper{
     width: 600px;
     height: 300px;}
+
+    .product-category {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+    gap: 4rem;
+    color: #fff;
+    margin-bottom: 10rem;
+}
+
+    .promotional-deals {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    }
 }
