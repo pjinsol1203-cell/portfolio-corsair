@@ -36,9 +36,17 @@
 <main>
 <h1 class="point main-txt">PC 부품</h1>
 <!-- header2-product category -->
-<div class="header2-product-category">
+<div class="header2">
   <div class="common-frame">
-    <ul class="h2pcate">
+    <button type="button"
+            class="header2-toggle"
+            aria-expanded="false"
+            aria-controls="header2-category-list"
+            data-label-open="제품 카테고리 열기"
+            data-label-close="제품 카테고리 닫기">
+      제품 카테고리 열기
+    </button>
+    <ul class="h2pcate" id="header2-category-list">
       <li><a href="./product-case.html">케이스</a></li>
       <li><a href="./product-cooler.html">CPU&AIO쿨러</a></li>
       <li><a href="./product-fan.html">케이스 팬</a></li>
@@ -48,6 +56,14 @@
       <li><a href="#">스토리지</a></li>
       <li><a href="#">Accessories</a></li>
     </ul>
+    <button type="button"
+            class="header2-more"
+            aria-expanded="false"
+            aria-controls="header2-category-list"
+            data-label-open="+ 더보기"
+            data-label-close="− 접기">
+      + 더보기
+    </button>
   </div>
    
 </div>
@@ -413,6 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <div class="footer-wrap"></div>
 <script src="./js/include.js"></script>
+<script src="./js/header2.js"></script>
 </main>
 </body>
 </html>

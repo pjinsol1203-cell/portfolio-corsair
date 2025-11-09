@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsair-redesign</title>
+
+    <!-- 검색 최적화 소스코드(SEO) -->
+    <meta name="description" content="CORSAIR 공식 스토어에서만 누릴 수 있는 독점 제품, 카드사 할인, 무이자 할부, 60일 반품 보장, 무료 익일 배송 등 다양한 구매 혜택을 만나보세요.">
+    <meta name="keywords" content="CORSAIR, 커세어, 공식몰, 정품, 구매 혜택, 독점 제품, 한정판, 무이자 할부, 카드사 할인, 빠른 배송, 반품 정책, iCUE, 게이밍기어">
+    <meta name="author" content="CORSAIR 공식 스토어">
+    <meta name="robots" content="index, follow">
+
+    <!-- SNS 공유 (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CORSAIR 공식몰 구매 혜택">
+    <meta property="og:description" content="공식몰 한정 혜택 — 정품 보장, 무료 배송, 독점 제품, 카드사 할인, 60일 반품 보장까지!">
+    <meta property="og:image" content="https://www.corsair.com/images/benefit-banner.jpg">
+    <meta property="og:url" content="https://www.corsair.com/kr/ko/official-benefits">
+
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="./img/fabicon.png" type="image/png">
+
+    <!-- font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/system.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style-pc.css">
+
+    <!-- 반응형 -->
+    <link rel="stylesheet" href="./css/style-tab-1440.css">
+    <link rel="stylesheet" href="./css/style-tab-1024.css">
+    <link rel="stylesheet" href="./css/style-mobile-768.css">
+    <link rel="stylesheet" href="./css/style-mobile-430.css">
+
+    <!-- 개별 style -->
+     <link rel="stylesheet" href="./css/my-info.css">
+
+     <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="header-wrap"></div>
+    <main>
+        <div class="signup-bg">
+            <div class="signup-overlay"></div>
+            <div class="signup-container">
+                <div class="signup-card">
+                    <div class="signup-logo">
+                        <img src="./logo-img/CORSAIRLogo2020_stack_W.png" alt="CORSAIR 로고">
+                    </div>
+                    <h1 class="signup-title">내 정보 관리</h1>
+                    <p class="detail">회원 정보를 최신 상태로 유지하고 간편하게 계정을 관리하세요.</p>
+
+                    <form class="signup-form">
+                        <div class="form-field">
+                            <label for="myinfo-email">이메일</label>
+                            <div class="input-row">
+                                <input type="email" id="myinfo-email" placeholder="example@corsair.com" required>
+                                <button type="button" class="btn-secondary">중복 확인</button>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="current-password">기존 비밀번호</label>
+                            <input type="password" id="current-password" placeholder="현재 비밀번호를 입력하세요" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="new-password">변경할 비밀번호</label>
+                            <input type="password" id="new-password" placeholder="새 비밀번호 (영문/숫자/특수문자 8~16자)" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="new-password-confirm">비밀번호 확인</label>
+                            <input type="password" id="new-password-confirm" placeholder="새 비밀번호를 다시 입력하세요" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" placeholder="010-0000-0000" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="birthday">생년월일</label>
+                            <input type="date" id="birthday" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="address">주소</label>
+                            <input type="text" id="address" placeholder="도로명 주소를 입력하세요" required>
+                        </div>
+
+                        <div class="form-field">
+                            <span class="field-label">성별</span>
+                            <div class="select-group select-group-compact">
+                                <label class="select-btn">
+                                    <input type="radio" name="gender" value="male" checked>
+                                    <span>남자</span>
+                                </label>
+                                <label class="select-btn">
+                                    <input type="radio" name="gender" value="female">
+                                    <span>여자</span>
+                                </label>
+                                <label class="select-btn">
+                                    <input type="radio" name="gender" value="other">
+                                    <span>기타</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="myinfo-actions">
+                            <button type="button" class="btn-danger">탈퇴하기</button>
+                            <button type="submit" class="btn-primary">완료</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer-wrap"></div>
+    <script src="./js/include.js"></script>
+</body>
+</html>

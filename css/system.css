@@ -113,7 +113,8 @@ p{
 
 .common-frame{
     width:auto;
-    margin: 0 3rem;
+    margin: 0;
+    padding: 0 3rem;
 }
 .common-frame2{
     width:1440px;
@@ -163,7 +164,8 @@ p{
     }
     .common-frame{
         width:auto;
-        margin:0 2rem;
+        margin:0;
+        padding: 0 2rem;
     }
 }
 
@@ -173,6 +175,7 @@ p{
     }
     .common-frame{
         width:auto;
-        margin:0 1rem;
+        margin:0;
+        padding:0 1rem;
     }
 }

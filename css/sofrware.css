@@ -1,0 +1,424 @@
+.iCUE-banner{
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 1.5rem;
+    color: #fff;
+    background: url("../img/software/hero  banner-1.jpg") no-repeat center/cover fixed;
+    overflow: hidden;
+}
+
+.iCUE-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,0,30,0.45) 0%, rgba(6,0,20,0.55) 100%);
+    z-index: 0;
+}
+
+.iCUE-banner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(255, 0, 120, 0.08) 0 8px,
+        transparent 8px 68px
+    );
+    opacity: 0.22;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.icue-banner__inner{
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transform: translateY(-48px);
+}
+
+.icue-banner__logo img{
+    width: 100px;
+    height: auto;
+}
+
+.iCUE-banner h1{
+    font-size: clamp(2.5rem, 5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.iCUE-banner p{
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.86);
+}
+
+.icue-banner__actions{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-icue{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    padding: 0.85rem 1.8rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-icue.video{
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+}
+
+.btn-icue.download{
+    background: linear-gradient(135deg, var(--point-pink) 0%, var(--point-purple) 100%);
+    color: #fff;
+    border: none;
+}
+
+.btn-icue:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(140, 50, 255, 0.35);
+}
+
+.btn-icue.video:hover{
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 12px 28px rgba(255,255,255,0.25);
+}
+
+.icue-offerings {
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    color: #fff;
+}
+
+.icue-card{
+    display: flex;
+    flex-direction: column;
+    background: rgba(12,0,24,0.96);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 30px 70px rgba(8,0,40,0.45);
+}
+
+.icue-card figure{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.icue-card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.icue-card:hover figure img{
+    transform: scale(1.05);
+}
+
+.icue-card__body{
+    background: linear-gradient(180deg, rgba(14,0,28,0.95) 0%, rgba(8,0,18,0.98) 100%);
+    padding: 2rem 1.6rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    min-height: 260px;
+}
+
+.icue-card__body h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.icue-card__body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.7rem;
+}
+
+.icue-card__body li{
+    position: relative;
+    padding-left: 1.2rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+}
+
+.icue-card__body li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--point-pink);
+}
+
+.icue-murals {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    margin-bottom: 8rem;
+}
+
+.icue-murals__headline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.icue-murals__headline .more {
+    align-self: center;
+}
+
+.icue-murals__headline p{
+    color: rgba(255,255,255,0.75);
+}
+
+.icue-murals__content{
+    position: relative;
+    display: block;
+}
+
+.icue-murals__stage{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 30px 70px rgba(8,0,40,0.45);
+    background: rgba(12,0,24,0.9);
+    position: relative;
+}
+
+.icue-murals__stage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.35s ease;
+}
+
+.icue-murals__palette{
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 3;
+}
+
+.icue-murals__swatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem;
+    background: rgba(8, 0, 20, 0.85);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    cursor: pointer;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.85rem;
+    text-align: center;
+    transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.icue-murals__swatch span{
+    line-height: 1.35;
+}
+
+.icue-murals__swatch img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.35);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icue-murals__swatch:hover,
+.icue-murals__swatch.active{
+    color: #fff;
+    border-color: rgba(255,255,255,0.35);
+}
+
+.icue-murals__swatch:hover img,
+.icue-murals__swatch.active img{
+    border-color: var(--point-pink);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 18px 36px rgba(127,92,255,0.35);
+}
+
+.guide-title{
+    margin-top: 8rem;
+}
+
+.guide-article-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.8rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.guide-article a{
+    display: flex;
+    flex-direction: column;
+    background: rgba(14,14,24,0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    height: 100%;
+}
+
+.guide-article figure{
+    overflow: hidden;
+    width: 100%;
+}
+
+.guide-article figure::before{
+    content: "";
+    display: block;
+    padding-top: 66.666%;
+}
+
+.guide-article figure img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.guide-article figure{
+    position: relative;
+}
+
+.guide-article-body{
+    background: #fff;
+    color: #0a0a12;
+    padding: 1.2rem 1.4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    flex: 1 1 0;
+}
+
+.guide-article h3{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    flex: 1 1 auto;
+}
+
+.guide-tag{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    padding: 0 0.9rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border-radius: 999px;
+    background: rgba(33,33,33,0.08);
+    color: #333;
+}
+
+.guide-tag.blog{ background: rgba(237, 227, 255, 0.8); }
+.guide-tag.howto{ background: rgba(255, 214, 153, 0.85); }
+
+.guide-article a:hover{
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.22);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.45);
+}
+
+.guide-article a:hover img{
+    transform: scale(1.06);
+}
+
+@media (max-width: 1024px){
+    .icue-offerings{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .icue-murals__content{
+        margin-top: 1.6rem;
+    }
+
+    .icue-murals__stage{
+        overflow: visible;
+        padding-bottom: 3.2rem;
+    }
+
+    .icue-murals__palette{
+        position: static;
+        transform: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.4rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px){
+    .iCUE-banner{
+        padding: 5rem 1rem;
+        min-height: 520px;
+    }
+
+    .icue-banner__logo img{
+        width: 84px;
+    }
+
+    .icue-banner__inner{
+        transform: translateY(-24px);
+    }
+
+    .icue-offerings{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .icue-murals{
+        gap: 1.5rem;
+    }
+
+    .icue-murals__palette{
+        gap: 1rem;
+    }
+}
+

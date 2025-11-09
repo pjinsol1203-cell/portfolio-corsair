@@ -36,9 +36,17 @@
 <main>
 <h1 class="point main-txt">PC 부품</h1>
 <!-- header2-product category -->
-<div class="header2-product-category">
+<div class="header2">
   <div class="common-frame">
-    <ul class="h2pcate">
+    <button type="button"
+            class="header2-toggle"
+            aria-expanded="false"
+            aria-controls="header2-category-list"
+            data-label-open="제품 카테고리 열기"
+            data-label-close="제품 카테고리 닫기">
+      제품 카테고리 열기
+    </button>
+    <ul class="h2pcate" id="header2-category-list">
       <li><a href="./product-case.html">케이스</a></li>
       <li><a href="./product-cooler.html">CPU&AIO쿨러</a></li>
       <li><a href="./product-fan.html">케이스 팬</a></li>
@@ -48,6 +56,14 @@
       <li><a href="#">스토리지</a></li>
       <li><a href="#">Accessories</a></li>
     </ul>
+    <button type="button"
+            class="header2-more"
+            aria-expanded="false"
+            aria-controls="header2-category-list"
+            data-label-open="+ 더보기"
+            data-label-close="− 접기">
+      + 더보기
+    </button>
   </div>
    
 </div>
@@ -75,7 +91,7 @@
 <!-- product list -->
   <div class="product-container common-frame">
     <!-- 제품 1 -->
-    <div class="product-list" data-id="1">
+    <div class="@media (max-width: 480px)" data-id="1">
       <a href="detail1.html">
         <img src="./img/no.1pc product/case/case_1W.png" alt="CASE 1" class="product-img" />
       </a>
@@ -318,93 +334,93 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Guides -->
-<h1 class="point">Guides</h1>
+<h1 class="point guide-section-title">Guides</h1>
 <div class="common-frame guide-wrapper">
-  <div class="guide-list ">
-    <div class=" ">
-        <a href="#">
-          <img src="./img/product_page/case_how to1.webp" alt="PC 케이스 101: 사이즈 및 레이아웃" class="guide-img" />
-        </a>
-        <div class="guide-txt-box">
-          <p class="detail">BLOG</p>
-          <p class="b2">PC 케이스 101: 사이즈 및 레이아웃</p>
+  <div class="guide-article-grid">
+    <article class="guide-article">
+      <a href="#">
+        <figure><img src="./img/product_page/case_how to1.webp" alt="PC 케이스 101: 사이즈 및 레이아웃"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>PC 케이스 101: 사이즈 및 레이아웃</h3>
         </div>
-    </div>
-
-    <div class=" ">
-      <a href="#">
-        <img src="./img/product_page/case_how to2.webp" alt="PC 케이스 102: 냉각 및 소음" class="guide-img" />
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>PC 케이스 102: 냉각 및 소음</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to3.webp" alt="PC 케이스 103: 빌더 특장점" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to2.webp" alt="PC 케이스 102: 냉각 및 소음"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>PC 케이스 102: 냉각 및 소음</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>PC 케이스 103: 빌더 특장점</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to4.webp" alt="내 케이스에 적합한 마더보드와 쿨러가 무엇인가요?" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to3.webp" alt="PC 케이스 103: 빌더 특장점"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>PC 케이스 103: 빌더 특장점</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">HOW TO</p>
-        <p>내 케이스에 적합한 마더보드와 쿨러가 무엇인가요?</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to5.webp" alt="ATX VS MICROATX VS MINI-ITX: 차이점이 무엇인가요?" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to4.webp" alt="내 케이스에 적합한 마더보드와 쿨러가 무엇인가요?"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag howto">HOW TO</span>
+          <h3>내 케이스에 적합한 마더보드와 쿨러가 무엇인가요?</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>ATX VS MICROATX VS MINI-ITX: 차이점이 무엇인가요?</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to6.webp" alt="전면 패널 커넥터를 마더보드에 연결하려면
-        어떻게 해야 합니까?" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to5.webp" alt="ATX VS MICROATX VS MINI-ITX: 차이점이 무엇인가요?"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>ATX VS MICROATX VS MINI-ITX: 차이점이 무엇인가요?</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>전면 패널 커넥터를 마더보드에 연결하려면 어떻게 해야 합니까?</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to7.png" alt="CORSAIR가 2500D/X 및 6500D/X 케이스 에서 역방향 마더보드를 지원하는 방법" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to6.webp" alt="전면 패널 커넥터를 마더보드에 연결하려면 어떻게 해야 합니까?"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>전면 패널 커넥터 연결 방법</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>CORSAIR가 2500D/X 및 6500D/X 케이스 에서 역방향 마더보드를 지원하는 방법</p>
-      </div>
-    </div>
+    </article>
 
-    <div class=" ">
+    <article class="guide-article">
       <a href="#">
-        <img src="./img/product_page/case_how to8.webp" alt="CORSAIR 2500 SERIES 케이스: 알아야 할 모든 사항" class="guide-img" />
+        <figure><img src="./img/product_page/case_how to7.png" alt="CORSAIR가 2500D/X 및 6500D/X 케이스 에서 역방향 마더보드를 지원하는 방법"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>CORSAIR 2500D/X &amp; 6500D/X 역방향 마더보드 지원</h3>
+        </div>
       </a>
-      <div class="guide-txt-box">
-        <p class="detail">BLOG</p>
-        <p>CORSAIR 2500 SERIES 케이스: 알아야 할 모든 사항</p>
-      </div>
-    <div class="swiper-pagination"></div>
+    </article>
+
+    <article class="guide-article">
+      <a href="#">
+        <figure><img src="./img/product_page/case_how to8.webp" alt="CORSAIR 2500 SERIES 케이스: 알아야 할 모든 사항"></figure>
+        <div class="guide-article-body">
+          <span class="guide-tag blog">BLOG</span>
+          <h3>CORSAIR 2500 SERIES: 알아야 할 모든 것</h3>
+        </div>
+      </a>
+    </article>
   </div>
 </div>
 </main>
 <div class="footer-wrap"></div>
 <script src="./js/include.js"></script>
+<script src="./js/header2.js"></script>
 </body>
 </html>

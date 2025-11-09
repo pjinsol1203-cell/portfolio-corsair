@@ -142,6 +142,13 @@ var(--color2) 50%);
   padding-bottom: 5rem;
 }
 
+@media (max-width: 1024px){
+  .product-container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem 1.5rem;
+  }
+}
+
 /* how to correct */
 .correct-title{
   margin-bottom: 5rem;
@@ -183,29 +190,96 @@ var(--color2) 50%);
 }
 
 /* Guides */
-.guide-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-  gap: 3rem 1rem;
-  padding-top: 3.5rem;
+.guide-section-title{
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.guide-wrapper{
+  padding-top: 0;
   margin-bottom: 6rem;
 }
 
-.guide-txt-box{
-  /* background-color: #000; */
-  height: 7.65rem;
-  color: #fff;
-  padding: 1rem;
-  flex-grow: 1;
+.guide-article-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.8rem;
 }
 
-.guide-txt-box>p{padding: 1rem 0;}
+.guide-article a{
+  display: flex;
+  flex-direction: column;
+  background: rgba(14,14,24,0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  height: 100%;
+}
 
-.guide-img {
+.guide-article figure{
+  overflow: hidden;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  display: block;
+  position: relative;
 }
 
+.guide-article figure::before{
+  content: "";
+  display: block;
+  padding-top: 66.666%;
+}
 
+.guide-article figure img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.guide-article-body{
+  background: #fff;
+  color: #0a0a12;
+  padding: 1.2rem 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  flex: 1 1 0;
+}
+
+.guide-article h3{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  flex: 1 1 auto;
+}
+
+.guide-tag{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 0 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
+  background: rgba(33,33,33,0.08);
+  color: #333;
+}
+
+.guide-tag.blog{ background: rgba(237, 227, 255, 0.8); }
+.guide-tag.howto{ background: rgba(255, 214, 153, 0.85); }
+.guide-tag.patch{ background: rgba(163, 231, 255, 0.85); }
+.guide-tag.guide{ background: rgba(207, 255, 207, 0.85); }
+
+.guide-article a:hover{
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.22);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.45);
+}
+
+.guide-article a:hover img{
+  transform: scale(1.06);
+}

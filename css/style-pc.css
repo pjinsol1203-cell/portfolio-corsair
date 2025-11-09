@@ -29,7 +29,7 @@ height:100vh
 .hero-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
     left: 0;
     top: initial;
-    bottom: 5.8rem;
+    bottom: clamp(2rem, 6vw, 5.8rem);
     width: 100%;
 }
 .tab-slide{display: none;}
@@ -185,4 +185,16 @@ main{
 
 .support{
     margin-bottom: 11rem;
+}
+
+@media(max-width:1580px){
+  .hero-banner-slider .swiper-horizontal>.swiper-pagination-bullets, .hero-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 7.8rem;
+}
+}
+
+@media(max-width:1500px){
+  .hero-banner-slider .swiper-horizontal>.swiper-pagination-bullets, .hero-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 8.8rem;
+}
 }
