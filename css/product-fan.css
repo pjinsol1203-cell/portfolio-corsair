@@ -14,7 +14,39 @@ html{
 }
 
 .thumb-list{
-    더버ㄸ뜨;아언딘,ㄴ즐 ;
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem auto 0;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--point-pink) rgba(128,128,128,0.2);
+    scroll-snap-type: x mandatory;
+    max-width: calc(6rem * 2.5 + 1rem * 2);
+    -ms-overflow-style: none;
+}
+
+.thumb-list::-webkit-scrollbar{
+    height: 6px;
+    width: 0;
+}
+
+.thumb-list::-webkit-scrollbar-track{
+    background-color: rgba(128,128,128,0.2);
+    border-radius: 999px;
+}
+
+.thumb-list::-webkit-scrollbar-thumb{
+    background-color: var(--point-pink);
+    border-radius: 999px;
+}
+
+.thumb-list::-webkit-scrollbar-button{
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
 }
 
 .thumb-list button{
@@ -24,6 +56,8 @@ html{
     border: 2px solid transparent;
     background: transparent;
     cursor: pointer;
+    flex: 0 0 6rem;
+    scroll-snap-align: start;
 }
 
 /* 썸네일 이미지: 흰 배경 제거 및 박스에 맞게 표시 */
@@ -48,4 +82,5 @@ html{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 6rem;
+    margin-bottom: 6rem;
 }

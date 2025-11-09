@@ -49,18 +49,23 @@
     <div class="hg2">
         <div class="common-frame slider-container">
             <ul class="slide-track">
-                <li><a href="#">모든 제품</a></li>
-                <li><a href="#">가이드</a></li>
-                <li><a href="#">소프트웨어</a></li>
-                <li><a href="#">지원</a></li>
-                <li><a href="#">로그인</a></li>
+                <li><a href="#" class="active" data-category="모든 제품">모든 제품</a></li>
+                <li><a href="#" data-category="가이드">가이드</a></li>
+                <li><a href="#" data-category="소프트웨어">소프트웨어</a></li>
+                <li><a href="#" data-category="지원">지원</a></li>
+                <li><a href="#" data-category="로그인">로그인</a></li>
             </ul>
         </div>
     </div>
     
     <div class="common-frame hg3">
+        <div class="gnb-smart-content on" data-category="모든 제품">
         <ul class="gnb-smart">
-            <li><a href="#">PC 부품</a>
+            <li>
+                <div class="gnb-smart-item">
+                    <a href="#">PC 부품</a>
+                    <img src="./img/menu-close.svg" alt="PC 부품 하위 메뉴 닫힘" class="toggle-menu" data-label="PC 부품" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                </div>
                 <ul>
                     <li><a href="./product-case.html">케이스</a></li>
                     <li><a href="#">icue LINK</a></li>
@@ -74,7 +79,11 @@
                 </ul>
             </li>
 
-            <li><a href="#">게이밍 장치</a>
+            <li>
+                <div class="gnb-smart-item">
+                    <a href="#">게이밍 장치</a>
+                    <img src="./img/menu-close.svg" alt="게이밍 장치 하위 메뉴 닫힘" class="toggle-menu" data-label="게이밍 장치" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                </div>
                 <ul>
                     <li><a href="#">키보드</a></li>
                     <li><a href="#">헤드셋</a></li>
@@ -84,14 +93,22 @@
                     <li><a href="#">부속품</a></li>
                 </ul>
             </li>
-            <li><a href="#">게이밍 PC</a>
+            <li>
+                <div class="gnb-smart-item">
+                    <a href="#">게이밍 PC</a>
+                    <img src="./img/menu-close.svg" alt="게이밍 PC 하위 메뉴 닫힘" class="toggle-menu" data-label="게이밍 PC" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                </div>
                 <ul>
                     <li><a href="#">게이밍 PC</a></li>
                     <li><a href="#">CORSAIR ONE PC</a></li>
                     <li><a href="#">모니터</a></li>
                 </ul>
             </li>
-            <li><a href="#">게이밍 가구</a>
+            <li>
+                <div class="gnb-smart-item">
+                    <a href="#">게이밍 가구</a>
+                    <img src="./img/menu-close.svg" alt="게이밍 가구 하위 메뉴 닫힘" class="toggle-menu" data-label="게이밍 가구" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                </div>
                 <ul>
                     <li><a href="#">부속품</a></li>
                     <li><a href="#">데스크</a></li>
@@ -99,12 +116,53 @@
                 </ul>
             </li>
             
-            <li><a href="#">AI 워크스테이션</a>
+            <li>
+                <div class="gnb-smart-item">
+                    <a href="#">AI 워크스테이션</a>
+                    <img src="./img/menu-close.svg" alt="AI 워크스테이션 하위 메뉴 닫힘" class="toggle-menu" data-label="AI 워크스테이션" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                </div>
                 <ul>
                     <li><a href="#">WS53000 전원 공급 장치</a></li>
                 </ul>
             </li>
         </ul>
+        </div>
+        <div class="gnb-smart-content" data-category="가이드">
+            <ul class="gnb-guide">
+                <li><a href="#">가이드&기사</a></li>
+                <li><a href="#">DIY 빌더</a></li>
+                <li><a href="#">게임&가구</a></li>
+                <li><a href="#">소프트웨어</a></li>
+                <li><a href="#">iCUE 가이드</a></li>
+                <li><a href="#">iCUE 조명 프로필</a></li>
+            </ul>
+        </div>
+        <div class="gnb-smart-content" data-category="소프트웨어">
+            <ul class="gnb-smart">
+                <li>
+                    <div class="gnb-smart-item">
+                        <a href="#">iCUE 소프트웨어</a>
+                        <img src="./img/menu-close.svg" alt="iCUE 소프트웨어 하위 메뉴 닫힘" class="toggle-menu" data-label="iCUE 소프트웨어" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                    </div>
+                    <ul>
+                        <li><a href="#">iCUE 소개</a></li>
+                        <li><a href="#">iCUE 다운로드</a></li>
+                        <li><a href="#">iCUE Murals</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="gnb-smart-item">
+                        <a href="#">통합</a>
+                        <img src="./img/menu-close.svg" alt="통합 하위 메뉴 닫힘" class="toggle-menu" data-label="통합" data-open-src="./img/menu-open.svg" data-close-src="./img/menu-close.svg">
+                    </div>
+                    <ul>
+                        <li><a href="#">Nanoleaf</a></li>
+                        <li><a href="#">Philips Hue</a></li>
+                        <li><a href="#">NVIDIA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 

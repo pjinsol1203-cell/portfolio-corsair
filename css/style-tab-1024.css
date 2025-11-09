@@ -14,4 +14,24 @@
     grid-template-columns: repeat(2,auto);
     gap: 1rem;
 }
+
+    .hero-banner-slider{
+        height: auto;
+    }
+
+    .hero-banner-slider .swiper-wrapper,
+    .hero-banner-slider .swiper-slide{
+        height: auto;
+    }
+
+    .hero-banner-slider .swiper-slide img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-banner-slider .swiper-horizontal>.swiper-pagination-bullets,
+    .hero-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 2.5rem;
+    }
 }

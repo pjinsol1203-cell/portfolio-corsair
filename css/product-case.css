@@ -188,6 +188,7 @@ var(--color2) 50%);
   grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
   gap: 3rem 1rem;
   padding-top: 3.5rem;
+  margin-bottom: 6rem;
 }
 
 .guide-txt-box{
