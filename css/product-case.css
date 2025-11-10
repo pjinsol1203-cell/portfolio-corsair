@@ -26,17 +26,18 @@ html{
   width: 100%;
 }
 
-.main-banner{
-  position: relative;
-  width: 100%;
-  min-height: 900px;
-  background: url(../img/pc-case-banner.png) no-repeat center/cover;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
+.main-banner {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    background: url(../img/pc-case-banner.png) no-repeat center/cover;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
 }
 
 .banner-text{

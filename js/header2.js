@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const MOBILE_BREAKPOINT = 768;
+  const MOBILE_BREAKPOINT = 1024;
   const DESKTOP_COLLAPSE_BREAKPOINT = 1440;
 
   const headers = Array.from(document.querySelectorAll('.header2'))
