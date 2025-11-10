@@ -65,6 +65,44 @@ header:after{
     padding: .5rem 1rem;
 }
 
+.lnb li{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lnb .cart-link{
+    padding-right: 1.6rem;
+}
+
+.lnb .cart-badge{
+    position: absolute;
+    top: -0.75rem;
+    right: -0.25rem;
+    min-width: 1.1rem;
+    height: 1.1rem;
+    padding: 0 0.35rem;
+    border-radius: 999px;
+    background: var(--point-pink);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-6%) scale(0.6);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    border: 1px solid rgba(0,0,0,0.6);
+    pointer-events: none;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1), 0 8px 16px rgba(255,0,228,0.3);
+}
+
+.lnb .cart-badge.cart-badge--visible{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
 .header-bottom{
     padding-bottom: var(--space-x-large);
 }

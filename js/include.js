@@ -1,4 +1,8 @@
-fetch('/header.html')
+
+
+
+
+    fetch('/header.html')
     .then(response => response.text())
     .then(data => {
         document.querySelector(".header-wrap").innerHTML += data
@@ -102,6 +106,76 @@ fetch('/header.html')
                 resetSmartMenu()
             })
         })
+
+        const cartLink = document.querySelector(".lnb .cart-link")
+        const cartBadgeEl = cartLink?.querySelector(".cart-badge")
+        let cartCount = 0
+        let storageAvailable = true
+
+        try {
+            const testKey = "__cart_test__"
+            sessionStorage.setItem(testKey, "1")
+            sessionStorage.removeItem(testKey)
+        } catch (error) {
+            storageAvailable = false
+        }
+
+        if (storageAvailable) {
+            const stored = Number(sessionStorage.getItem("corsairCartCount") || "0")
+            if (!Number.isNaN(stored) && stored > 0) {
+                cartCount = stored
+            }
+        }
+
+        const renderCartBadge = () => {
+            if (!cartBadgeEl) return
+            if (cartCount > 0) {
+                cartBadgeEl.textContent = cartCount
+                cartBadgeEl.classList.add("cart-badge--visible")
+            } else {
+                cartBadgeEl.textContent = ""
+                cartBadgeEl.classList.remove("cart-badge--visible")
+            }
+        }
+
+        const syncStorage = () => {
+            if (!storageAvailable) return
+            try {
+                sessionStorage.setItem("corsairCartCount", String(cartCount))
+            } catch (error) {
+                // ignore storage errors
+            }
+        }
+
+        const cartAPI = {
+            increment(step = 1) {
+                const numericStep = Number(step)
+                const safeStep = Number.isFinite(numericStep) ? numericStep : 1
+                cartCount += safeStep > 0 ? safeStep : 1
+                renderCartBadge()
+                syncStorage()
+                return cartCount
+            },
+            set(count) {
+                cartCount = Math.max(0, Math.floor(Number(count) || 0))
+                renderCartBadge()
+                syncStorage()
+                return cartCount
+            },
+            reset() {
+                cartCount = 0
+                renderCartBadge()
+                syncStorage()
+            },
+            get value() {
+                return cartCount
+            }
+        }
+
+        renderCartBadge()
+
+        window.cartBadge = cartAPI
+        document.dispatchEvent(new CustomEvent("cartBadgeReady", { detail: cartAPI }))
 
         })
     .catch(error => console.log("에러 : ",error))

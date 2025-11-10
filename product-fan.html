@@ -50,13 +50,13 @@
     </button>
     <ul class="h2pcate" id="header2-category-list">
           <li><a href="./product-case.html">케이스</a></li>
-          <li><a href="./product-cooler.html">CPU&AIO쿨러</a></li>
+          <li><a href="./product-case.html">CPU&AIO쿨러</a></li>
           <li><a href="./product-fan.html">케이스 팬</a></li>
-          <li><a href="#">메모리</a></li>
-          <li><a href="#">전원공급장치</a></li>
-          <li><a href="#">맞춤형 냉각</a></li>
-          <li><a href="#">스토리지</a></li>
-          <li><a href="#">Accessories</a></li>
+          <li><a href="./product-case.html">메모리</a></li>
+          <li><a href="./product-case.html">전원공급장치</a></li>
+          <li><a href="./product-case.html">맞춤형 냉각</a></li>
+          <li><a href="./product-case.html">스토리지</a></li>
+          <li><a href="./product-case.html">Accessories</a></li>
         </ul>
     <button type="button"
             class="header2-more"
@@ -69,20 +69,32 @@
       </div>
     </div>
 
+    <!-- banner -->
+    <section class="case-fan-title-banner">
+      <div class="case-fan-title">
+        <h1 class="point case-main-title">CORSAIR PC CASE FAN</h1>
+        <p class="case-sub-title">다양한 크기와 스타일로 제공되는 고성능 케이스 팬으로 PC의 냉각 성능을 업그레이드하세요. <br> PC 팬을 자동으로 감지하고 구성하는 획기적인 단일 케이블 기술을 통해 DIY PC를 구축하는 방식을 새롭게 정의하세요.</p>
+      </div>
+    </section>
+
     <!-- category-select -->
-    <select class="caregory-select">
-        <option href="#">모든 제품</option>
-        <option href="#">자기 부상 케이스 팬</option>
-        <option href="#">iCUE RGB 케이스 팬</option>
-        <option href="#">PWM 컨트롤 케이스 팬</option>
-        <option href="#">140mm 케이스 팬</option>
-        <option href="#">120mm 케이스 팬</option>
-    </select>
+    <div class="category-select" data-selected="모든 제품">
+      <button type="button" class="category-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+        <span class="category-select__label">모든 제품</span>
+      </button>
+      <ul class="category-select__list" role="listbox">
+        <li class="category-select__option active" data-value="모든 제품" role="option" aria-selected="true">모든 제품</li>
+        <li class="category-select__option" data-value="자기 부상 케이스 팬" role="option">자기 부상 케이스 팬</li>
+        <li class="category-select__option" data-value="iCUE RGB 케이스 팬" role="option">iCUE RGB 케이스 팬</li>
+        <li class="category-select__option" data-value="PWM 컨트롤 케이스 팬" role="option">PWM 컨트롤 케이스 팬</li>
+        <li class="category-select__option" data-value="140mm 케이스 팬" role="option">140mm 케이스 팬</li>
+        <li class="category-select__option" data-value="120mm 케이스 팬" role="option">120mm 케이스 팬</li>
+      </ul>
+      <input type="hidden" name="fan-category" value="모든 제품">
+    </div>
 
     <!-- title -->
-    <h1 class="point case-main-title">CORSAIR PC CASE FAN</h1>
-    <p class="case-sub-title">다양한 크기와 스타일로 제공되는 고성능 케이스 팬으로 PC의 냉각 성능을 업그레이드하세요. <br> PC 팬을 자동으로 감지하고 구성하는 획기적인 단일 케이블 기술을 통해 DIY PC를 구축하는 방식을 새롭게 정의하세요.</p>
-
+    
     <!-- product list: case fan -->
     <section class="fan-list common-frame">
       <ul class="fan-grid">
@@ -102,8 +114,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">RS120-R ARGB 120mm <br> PWM 리버스 팬 3개 팩</h4>
-            <p class="detail">58,000원</p>
+            <p class="b2">RS120-R ARGB 120mm <br> PWM 리버스 팬 3개 팩</p>
+            <h3>58,000원</h3>
         </li>
 
         <!-- product2 -->
@@ -139,8 +151,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">iCUE LINK LX140-R RGB 140mm <br> PWM 리버스 팬 스타터 키트</h4>
-            <p class="detail">109,000원</p>
+            <p class="b2">iCUE LINK LX140-R RGB 140mm <br> PWM 리버스 팬 스타터 키트</p>
+            <h3>109,000원</h3>
         </li>
 
         <!-- peoduct3 -->
@@ -166,8 +178,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">iCUE LINK RX140 MAX 140mm <br> PWM Thick Fan Expansion</h4>
-            <p class="detail">55,000원</p>
+            <p class="b2">iCUE LINK RX140 MAX 140mm <br> PWM Thick Fan Expansion</p>
+            <h3>55,000원</h3>
         </li>
 
         <!-- product4 -->
@@ -214,8 +226,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">iCUE LINK RX140 MAX RGB 140mm <br> PWM Thick Fans Starter Kit</h4>
-            <p class="detail">176,260원</p>
+            <p class="b2">iCUE LINK RX140 MAX RGB 140mm <br> PWM Thick Fans Starter Kit</p>
+            <h3>176,260원</h3>
         </li>
 
         <!-- product5 -->
@@ -259,8 +271,8 @@
 
             </div>
             
-            <h4 class="product-name">RS140 140mm PWM 팬</h4>
-            <p class="detail">33,900원</p>
+            <p class="b2">RS140 140mm PWM 팬</p>
+            <h3>33,900원</h3>
         </li>
 
         <!-- product6 -->
@@ -300,8 +312,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">RS120 ARGB 120mm PWM 팬</h4>
-            <p class="detail">89,000원</p>
+            <p class="b2">RS120 ARGB 120mm PWM 팬</p>
+            <h3>89,000원</h3>
         </li>
 
         <!-- product7 -->
@@ -344,8 +356,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">iCUE LINK LX140 RGB 140mm <br> PWM 팬 스타터 키트</h4>
-            <p class="detail">109,000원</p>
+            <p class="b2">iCUE LINK LX140 RGB 140mm <br> PWM 팬 스타터 키트</p>
+            <h3>109,000원</h3>
         </li>
 
         <!-- product8 -->
@@ -372,8 +384,8 @@
                 </button>
             </div>
             
-            <h4 class="product-name">RS140 MAX 140mm PWM 두꺼운 팬</h4>
-            <p class="detail">93,000원</p>
+            <p class="b2">RS140 MAX 140mm PWM 두꺼운 팬</p>
+            <h3>93,000원</h3>
         </li>
       </ul>
     </section>
@@ -430,6 +442,65 @@
           card.querySelectorAll('.thumb').forEach(function (el) { el.classList.remove('active'); });
           btn.classList.add('active');
         }
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const fanSelect = document.querySelector('.category-select');
+        if (!fanSelect) return;
+
+        const trigger = fanSelect.querySelector('.category-select__trigger');
+        const label = fanSelect.querySelector('.category-select__label');
+        const options = Array.from(fanSelect.querySelectorAll('.category-select__option'));
+        const hiddenInput = fanSelect.querySelector('input[type="hidden"]');
+
+        const closeSelect = () => {
+          fanSelect.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        };
+
+        const openSelect = () => {
+          fanSelect.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        };
+
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = fanSelect.classList.contains('open');
+          isOpen ? closeSelect() : openSelect();
+        });
+
+        options.forEach(option => {
+          option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const value = option.dataset.value;
+
+            options.forEach(opt => {
+              opt.classList.remove('active');
+              opt.setAttribute('aria-selected', 'false');
+            });
+
+            option.classList.add('active');
+            option.setAttribute('aria-selected', 'true');
+            label.textContent = value;
+            hiddenInput.value = value;
+            fanSelect.dataset.selected = value;
+
+            closeSelect();
+          });
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!fanSelect.contains(e.target)) {
+            closeSelect();
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            closeSelect();
+            trigger.focus();
+          }
+        });
       });
     </script>
 

@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="./css/font.css">
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
-<link rel="stylesheet" href="./css/product-case.css">
+<link rel="stylesheet" href="./css/detail.css">
 
 <!-- 개별 스타일 -->
 <link rel="stylesheet" href="./css/product-header2.css">
@@ -34,9 +34,331 @@
 <body>
 <div class="header-wrap"></div>
 <main>
-    
+    <!-- header2-product category -->
+    <div class="header2">
+    <div class="common-frame">
+        <button type="button"
+                class="header2-toggle"
+                aria-expanded="false"
+                aria-controls="header2-category-list"
+                data-label-open="제품 카테고리 열기"
+                data-label-close="제품 카테고리 닫기">
+        제품 카테고리 열기
+        </button>
+        <ul class="h2pcate" id="header2-category-list">
+        <li><a href="./product-case.html">케이스</a></li>
+        <li><a href="./product-cooler.html">CPU&AIO쿨러</a></li>
+        <li><a href="./product-fan.html">케이스 팬</a></li>
+        <li><a href="#">메모리</a></li>
+        <li><a href="#">전원공급장치</a></li>
+        <li><a href="#">맞춤형 냉각</a></li>
+        <li><a href="#">스토리지</a></li>
+        <li><a href="#">Accessories</a></li>
+        </ul>
+        <button type="button"
+                class="header2-more"
+                aria-expanded="false"
+                aria-controls="header2-category-list"
+                data-label-open="+ 더보기"
+                data-label-close="− 접기">
+        + 더보기
+        </button>
+    </div>
+    </div>
+
+    <!-- product -->
+    <div class="product-detail">
+        <figure class="product-detail__visual">
+            <img src="./img/case.detail/case-img.png" alt="FRAME 4500X LX-R RGB iCUE LINK 파노라마 글래스 미드 타워 PC 케이스 - 화이트">
+        </figure>
+        <div class="product-detail__info">
+            <h1 class="product-detail__title point">FRAME 4500X LX-R RGB iCUE LINK <br> 파노라마 글래스 미드 타워 PC 케이스 - 화이트</h1>
+
+            <ul class="product-detail__features">
+                <li>일체형 곡면 유리 전면 및 측면 패널</li>
+                <li>손쉬운 구축을 위한 InfiniRail 팬 마운트 시스템</li>
+                <li>듀얼 360mm 라디에이터 지원</li>
+                <li>iCUE LINK LX-R RGB 120mm 리버스 로터 팬 3개</li>
+                <li>GPU 지지대 암</li>
+                <li>역방향 커넥터 마더보드와 호환</li>
+                <li>연결된 장치의 완전한 디지털 제어를 위한 iCUE LINK 시스템 허브 포함</li>
+            </ul>
+
+            <div class="product-detail__meta">
+                <div class="product-detail__color">
+                    <h4 class="point">Color</h4>
+                    <div class="product-detail__color-swatches color-options">
+                        <span class="color-chip" data-img="./img/no.1pc product/case/case_1W.png"
+                        data-color-label="화이트" data-title="FRAME 4500X LX-R RGB iCUE LINK <br> 글래스 미드 타워 PC 케이스 - 화이트"
+                        style="background-color:#ffffff;" aria-label="화이트"></span>
+
+                        <span class="color-chip" data-img="./img/no.1pc product/case/case_1B.png"
+                        data-color-label="블랙" data-title="FRAME 4500X LX-R RGB iCUE LINK <br> 파노라마 글래스 미드 타워 PC 케이스 - 블랙"
+                        style="background-color:#000000;" aria-label="블랙"></span>
+                    </div>
+                    <p class="detail product-detail__color-label">화이트</p>
+                </div>
+                <div class="product-detail__price">
+                    <h4 class="point">Price</h4>
+                    <p class="detail price-value">342,000원</p>
+                </div>
+            </div>
+
+            <div class="product-detail__actions">
+                <button type="button" class="product-detail__btn btn-cart">장바구니</button>
+                <button type="button" class="product-detail__btn btn-buy">구매하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 공식몰 구매 혜택 -->
+    <div class="promotional-deals-title">
+        <p>왜 커세어에서 직접 구매해야할까?</p>
+        <h1 class="point" > 공식몰 구매 혜택</h1>
+    </div>
+    <div class="promotional-deals common-frame">
+        <div class="promotion-box">
+            <a href="./benefit.html">
+                <figure><img src="./img/promotional-deals/free.svg" alt="무료배송과 무료 반품"></figure>      
+            </a>
+            <div>
+                <h4>무료배송과 무료 반품</h4>
+                <p class="b2">반품은 60일 이내</p>
+            </div>
+        </div>
+        <div> <!-- 제품 전문가와의 라이브 채팅 -->
+            <a href="./benefit.html">
+                <figure><img src="./img/promotional-deals/live-chat.svg" alt="제품 전문가와의 라이브 채팅"></figure>    
+            </a>
+            <h4>제품 전문가와의<br>라이브 채팅</h4>
+        </div>
+        <div> <!-- 독점 제품 및 특가 -->
+            <a href="./benefit.html">
+                <figure><img src="./img/promotional-deals/sale.svg" alt="독점 제품 및 특가"></figure>  
+            </a>
+            <h4>독점 제품 및 특가</h4>
+        </div>
+        <div>  <!--  카드사 혜택 -->
+            <a href="./benefit-detail.html">
+                <figure><img src="./img/promotional-deals/card.svg" alt="카드사 혜택"></figure>  
+            </a>
+            <h4>카드사 혜택</h4>
+        </div>
+    </div>
+
+    <!-- product hero visual -->
+    <section class="product-hero">
+        <div class="product-hero__inner">
+            <div class="product-hero__text">
+                <img src="./img/case.detail/detaile%20page1-logo.svg" alt="iCUE LINK" class="product-hero__badge">
+                <h1 class="product-hero__title point">FRAME 4500X <br>RS-R ARGB</h1>
+                <p class="product-hero__subtitle point">파노라마 글래스 미드 타워 PC 케이스</p>
+            </div>
+            <div class="product-hero__visual"></div>
+        </div>
+    </section>
+
+    <section class="product-hero glass-panel">
+        <div class="product-hero__inner glass-panel__inner">
+            <div class="glass-panel__text">
+                <h4 class="point">미래지향적 곡선</h4>
+                <h1 class="point">파노라마<br>유리 측면 패널</h1>
+                <p class="detail">일체형 곡선 강화 유리로 조립 상태를 멋지게 뽐낼 수 있으며, 이음새나 예리한 각도가 시야를 가리지 않습니다.<br>
+                곡선형 글래스가 전면과 측면을 감싸며, 고성능 하드웨어를 가리지 않고 시원하게 보여줍니다.<br>
+                강화 유리 측면 패널은 안전성과 소음 감소를 위해 시각적으로 거의 보이지 않는 필름 코팅으로 적층 처리되었습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-hero infinirail">
+        <div class="product-hero__inner infinirail__inner">
+            <div class="infinirail__text">
+                <div class="infinirail__badge">
+                    <img src="./img/case.detail/detail page3-logo.svg" alt="infinirail-logo">
+                </div>
+                <h4 class="point">크게 또는 더 크게</h4>
+                <h1 class="point">CORSAIR INFINIRAIL<br>팬 마운트 시스템</h1>
+                <p class="detail">이 강철 다중점 팬 마운트 시스템은 루프 팬 구성에 탁월한 유연성을 제공합니다.<br>
+                간편하게 레일을 밀어 120mm 또는 140mm 팬을 필요한 곳에 정확하게 장착할 수 있어<br>
+                고정된 장착 지점에 제한 없이 원하는 공기 흐름을 보장할 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-hero airflow">
+        <div class="product-hero__inner airflow__inner">
+            <div class="airflow__text">
+                <div class="airflow__badge">
+                    <img src="./img/case.detail/detail page4-logo.svg" alt="iCUE LINK">
+                </div>
+                <h4 class="point">iCUE LINK 지원</h4>
+                <h1 class="point">LX-R 리버스<br>로터 흡기 팬 포함</h1>
+                <p class="detail">리버스 로터 iCUE LINK LX-R RGB 흡기 팬은 간편한 단일 케이블 연결, 방해받지 않는 RGB 조명, 저소음 냉각을 제공합니다.</p>
+                <p class="detail">통풍구가 있는 측면과 넓은 미드 타워 섀시를 통해 신선한 공기가 유입되어 효과적인 냉각과 풍부한 공기 흐름을 제공하여 최대 성능을 보장합니다.</p>
+                <p class="detail">일치하는 컬러의 iCUE LINK 시스템 허브가 포함되어 있어 시스템에 LINK 팬을 쉽게 추가할 수 있으며, 단일 허브로 최대 24개의 장치를 지원합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-hero ventilation">
+        <div class="product-hero__inner ventilation__inner">
+            <div class="ventilation__text">
+                <h4 class="point">계단식 냉각</h4>
+                <h1 class="point">우수한 통풍의<br>측면 및 상단 패널</h1>
+                <p class="detail">FRAME 4500X의 상단과 측면에는 공기 흐름을 최적화한 패널이 적용되어 <br>양쪽에 장착된 팬에 최대의 통풍량을 공급합니다.</p>
+                <p class="detail">측면 장착형 리버스 로터 흡기 팬은 섀시 외부에서 차가운 공기를 유입하며,<br> 상단 장착형 팬(별도 판매)은 케이스 외부로 뜨거운 공기를 배출하여 내부 온도를 낮게 유지합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-hero cables">
+        <div class="product-hero__inner cables__inner">
+            <div class="cables__text">
+                <h4 class="point">보이지 않게 숨기기</h4>
+                <h1 class="point">케이블 미사용</h1>
+                <p class="detail">ASUS BTF, MSI Project Zero, GIGABYTE Project Stealth와 완벽하게 호환되는 디자인으로,<br>커넥터와 케이블을 위한 충분한 절개부와 함께, 보이지 않는 부분까지도 깔끔하고 정돈된 빌드를 유지할 수 있도록 고정 용구를 제공합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-diy">
+        <div class="product-diy__header">
+            <span class="point">편리한 사용</span>
+            <h1 class="point">DIY의 올바른 완성</h1>
+            <p>FRAME 4500X에는 PC를 더 쉽게 구축할 수 있는 유용한 기능이 통합되어 있습니다.</p>
+        </div>
+        <div class="product-diy__grid">
+            <article class="product-diy__card">
+                <figure>
+                    <img src="./img/case.detail/diy_1.jpg" alt="수직 장착 GPU 지원">
+                </figure>
+                <div class="product-diy__body">
+                    <h3>수직 장착 GPU 지원</h3>
+                    <p>새 시스템에 GPU를 정면 중앙에 배치할 수 있습니다. 간편한 수직 장착으로 별도의 추가 브래킷이 필요 없습니다(라이저 케이블 별도 판매).</p>
+                </div>
+            </article>
+            <article class="product-diy__card">
+                <figure>
+                    <img src="./img/case.detail/diy_2.jpg" alt="처짐 없는 그래픽 카드">
+                </figure>
+                <div class="product-diy__body">
+                    <h3>처짐 없는 그래픽 카드</h3>
+                    <p>GPU 지지대 없이 GPU를 안정적으로 유지하므로 PCIe 슬롯 손상을 걱정할 필요가 없습니다.</p>
+                </div>
+            </article>
+            <article class="product-diy__card">
+                <figure>
+                    <img src="./img/case.detail/diy_3.jpg" alt="재사용 가능한 나사 상자">
+                </figure>
+                <div class="product-diy__body">
+                    <h3>재사용 가능한 나사 상자</h3>
+                    <p>필요한 모든 부품을 안전하게 보관할 수 있는 재사용 가능한 나사 상자를 포함하여 더 이상 중요한 나사를 다시는 잃어버릴 염려가 없습니다.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="product-size">
+        <div class="product-size__column">
+            <h3 class="point">치수</h3>
+            <p>FRAME 4500X는 원하는 방식으로 조립하고 <br>냉각하기에 충분한 공간을 제공합니다.</p>
+            <figure>
+                <img src="./img/case.detail/detail page7_size.png" alt="케이스 치수">
+            </figure>
+        </div>
+        <div class="product-size__column">
+            <h3 class="point">팬 용량</h3>
+            <p>모든 방향에서 충분한 양의 공기 흐름이 <br>시스템에 공급되어 최상의 성능이 유지됩니다.</p>
+            <figure>
+                <img src="./img/case.detail/detail page7_fan.png" alt="팬 용량">
+            </figure>
+        </div>
+    </section>
 </main>
 <div class="footer-wrap"></div>
 <script src="./js/include.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const detailRoot = document.querySelector('.product-detail');
+  if (!detailRoot) return;
+
+  const mainImg = detailRoot.querySelector('.product-detail__visual img');
+  const colorChips = detailRoot.querySelectorAll('.product-detail .color-chip');
+  const colorLabel = detailRoot.querySelector('.product-detail__color-label');
+  const titleEl = detailRoot.querySelector('.product-detail__title');
+
+  const selectChip = (chip) => {
+    if (!chip) return;
+    colorChips.forEach((c) => c.classList.remove('selected'));
+    chip.classList.add('selected');
+
+    const newImg = chip.dataset.img;
+    const newAlt = chip.dataset.alt;
+    const newTitle = chip.dataset.title;
+
+    if (mainImg && newImg) {
+      let resolvedSrc = newImg;
+      try {
+        resolvedSrc = new URL(newImg, window.location.href).href;
+      } catch (error) {
+        // fallback to original value
+      }
+
+      if (resolvedSrc && mainImg.src === resolvedSrc) {
+        mainImg.classList.remove('is-updating');
+      } else {
+        const handleLoad = () => {
+          mainImg.classList.remove('is-updating');
+          mainImg.removeEventListener('load', handleLoad);
+        };
+
+        mainImg.classList.add('is-updating');
+        mainImg.addEventListener('load', handleLoad);
+        mainImg.src = newImg;
+      }
+
+      if (newAlt) {
+        mainImg.alt = newAlt;
+      }
+    }
+
+    if (colorLabel) {
+      colorLabel.textContent = chip.dataset.colorLabel || colorLabel.textContent;
+    }
+
+    if (titleEl && newTitle) {
+      titleEl.innerHTML = newTitle.replace(/\n/g, '<br>');
+    }
+  };
+
+  if (colorChips.length) {
+    selectChip(colorChips[0]);
+    colorChips.forEach((chip) => {
+      chip.addEventListener('click', () => selectChip(chip));
+    });
+  }
+
+  const cartButton = detailRoot.querySelector('.btn-cart');
+  const attachCartHandler = (cartAPI) => {
+    if (!cartButton || cartButton.dataset.cartReady === 'true') return;
+    cartButton.dataset.cartReady = 'true';
+
+    cartButton.addEventListener('click', () => {
+      cartAPI?.increment?.(1);
+      cartButton.classList.add('is-added');
+      setTimeout(() => cartButton.classList.remove('is-added'), 550);
+    });
+  };
+
+  if (window.cartBadge) {
+    attachCartHandler(window.cartBadge);
+  } else {
+    const badgeListener = (event) => {
+      attachCartHandler(event.detail);
+    };
+    document.addEventListener('cartBadgeReady', badgeListener, { once: true });
+  }
+});
+</script>
 </body>
 </html>
