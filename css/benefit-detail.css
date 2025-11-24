@@ -217,3 +217,7 @@ cursor: pointer;
 .card-benefit{
     margin-bottom: 9.5rem;
 }
+
+header.pc {
+    display: none;
+}

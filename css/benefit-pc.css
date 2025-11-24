@@ -53,6 +53,16 @@
   color: #fff;
 }
 
+.benefit-box p .benefit-text-main {
+  display: inline;
+}
+
+.benefit-box p .benefit-text-sub {
+  display: inline;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
 .benefit-box span{
     font-size: 0.8rem;
 }
@@ -104,10 +114,85 @@
   background-color: var(--point-purple);
   color: #fff;
 }
+@media (max-width: 1440px){
+header.pc {
+    display: none;
+}
+}
 
 /* 반응형 */
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 769px) {
   .benefit-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .benefit-left {
+    gap: 2rem;
+  }
+  
+  .benefit-right {
+    gap: 2rem;
+  }
+}
+
+/* 모바일 - 세로 배치 */
+@media (max-width: 768px) {
+  .benefit-section {
+    padding: 3rem 1rem;
+  }
+  
+  .benefit-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .benefit-left {
+    width: 100%;
+    order: 1;
+    gap: 1.5rem;
+  }
+  
+  .benefit-right {
+    width: 100%;
+    order: 2;
+    gap: 1.5rem;
+  }
+  
+  .benefit-box {
+    padding: 1.5rem 1rem;
+  }
+  
+  .benefit-box img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .benefit-box p {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .benefit-box p .benefit-text-main,
+  .benefit-box p .benefit-text-sub {
+    display: block;
+  }
+  
+  .benefit-box p .benefit-text-sub {
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+  
+  .benefit-text h3 {
+    font-size: 1rem;
+  }
+  
+  .benefit-text li {
+    font-size: 0.75rem;
   }
 }
