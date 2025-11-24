@@ -1,3 +1,266 @@
 @media (max-width:430px){
+    .icue-murals__headline{
+        margin-top: 2rem;
+        gap: 1rem;
+    }
 
+    .icue-murals__headline h1{
+        font-size: 2rem;
+    }
+
+    .icue-murals__headline p{
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+
+    .icue-murals__stage{
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+    .icue-murals__palette{
+        gap: 0.8rem;
+        padding: 0;
+        margin: 1rem auto 0;
+    }
+
+    .icue-murals__swatch{
+        padding: 0.85rem;
+        gap: 0.5rem;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .icue-murals__swatch img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .icue-murals__swatch span{
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .guide-wrapper{
+        margin-bottom: 4rem;
+    }
+
+    .guide-article-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    /* 모바일에서 5번째 guide-article부터 숨기기 */
+    .guide-article:nth-child(n+5){
+        display: none;
+    }
+
+    /* 가이드 보러가기 링크 표시 */
+    .guide-more-link{
+        display: block;
+    }
+
+    /* detail.html 모바일 최적화 */
+    .product-detail{
+        margin: 1.5rem auto 2.5rem;
+        padding: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .product-detail__title{
+        font-size: 1.2rem;
+    }
+
+    .product-detail__info{
+        padding: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .product-detail__features li{
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    .product-detail__visual img{
+        max-width: 240px;
+    }
+
+    .product-detail__actions{
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .product-detail__btn{
+        flex: 1 1 auto;
+        padding: 0.45rem 0.7rem;
+        font-size: 0.65rem;
+        min-width: 0;
+    }
+
+    .product-detail__price .price-value{
+        font-size: 1.3rem;
+    }
+
+    .product-hero{
+        min-height: 350px;
+        margin-top: 1.5rem;
+    }
+
+    .product-hero__inner{
+        padding: 1.5rem 1.2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .product-hero__text{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .product-hero__badge{
+        width: 60px;
+    }
+
+    .product-hero__title{
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 130%;
+    }
+
+    .product-hero__subtitle{
+        font-size: 0.85rem;
+        text-align: left;
+        color: rgba(255,255,255,0.9);
+    }
+
+    .glass-panel__inner,
+    .infinirail__inner,
+    .airflow__inner,
+    .ventilation__inner,
+    .cables__inner{
+        padding: 1.5rem 1.2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .glass-panel__text,
+    .infinirail__text,
+    .airflow__text,
+    .ventilation__text,
+    .cables__text{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .glass-panel__text h4,
+    .infinirail__text h4,
+    .airflow__text h4,
+    .ventilation__text h4,
+    .cables__text h4{
+        text-align: left;
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+    }
+
+    .glass-panel__text h1,
+    .infinirail__text h1,
+    .airflow__text h1,
+    .ventilation__text h1,
+    .cables__text h1{
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+        text-align: left;
+        line-height: 130%;
+    }
+
+    .glass-panel__text p,
+    .infinirail__text p,
+    .airflow__text p,
+    .ventilation__text p,
+    .cables__text p{
+        font-size: 0.75rem;
+        line-height: 170%;
+        text-align: left;
+        color: rgba(255,255,255,0.9);
+    }
+
+    .promotional-deals-title{
+        margin-bottom: 1.5rem;
+    }
+
+    .promotional-deals-title h1{
+        font-size: 1.4rem;
+    }
+
+    .promotional-deals-title p{
+        font-size: 0.85rem;
+    }
+
+    .promotional-deals{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .promotional-deals > div{
+        flex-direction: column;
+        padding: 0.7rem 0.4rem;
+        gap: 0.4rem;
+    }
+
+    .promotional-deals > div figure{
+        width: 35px;
+        height: 35px;
+    }
+
+    .promotional-deals > div h4{
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .promotional-deals > div p{
+        font-size: 0.7rem;
+    }
+
+    .product-diy{
+        margin: 3rem auto 4rem;
+        padding: 0 1rem;
+    }
+
+    .product-diy__header > h1{
+        font-size: 1.5rem;
+    }
+
+    .product-diy__header > p{
+        font-size: 0.8rem;
+    }
+
+    .product-diy__body{
+        padding: 1.2rem;
+    }
+
+    .product-diy__body h3{
+        font-size: 1rem;
+    }
+
+    .product-diy__body p{
+        font-size: 0.8rem;
+    }
+
+    .product-size{
+        margin: 3rem auto 4rem;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .product-size__column h3{
+        font-size: 1.3rem;
+    }
+
+    .product-size__column p{
+        font-size: 0.8rem;
+    }
 }

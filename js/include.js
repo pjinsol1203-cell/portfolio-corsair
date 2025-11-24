@@ -88,12 +88,24 @@
 
         categoryLinks.forEach((link)=>{
             link.addEventListener("click",(event)=>{
-                event.preventDefault()
                 const category = link.dataset.category
                 if(!category) return
 
                 const targetContent = Array.from(smartContents).find((content)=>content.dataset.category === category)
+                
+                // 지원, 내 정보, 회원가입, 로그인은 페이지로 이동
+                const directLinkCategories = ["지원", "내 정보", "회원가입", "로그인"]
+                if(directLinkCategories.includes(category)) {
+                    // 링크가 href를 가지고 있으면 그대로 이동
+                    if(link.href && link.href !== window.location.href) {
+                        return // 기본 동작 허용
+                    }
+                }
+                
+                // 하위 메뉴가 있는 경우에만 preventDefault
                 if(!targetContent) return
+
+                event.preventDefault()
 
                 categoryLinks.forEach((other)=>other.classList.remove("active"))
                 link.classList.add("active")

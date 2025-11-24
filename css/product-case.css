@@ -396,3 +396,30 @@ var(--color2) 50%);
 .guide-article a:hover img{
   transform: scale(1.06);
 }
+
+.guide-more-link{
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.guide-more-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--point-pink) 0%, var(--point-purple) 100%);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.guide-more-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(140, 50, 255, 0.35);
+}

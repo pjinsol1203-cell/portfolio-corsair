@@ -101,10 +101,268 @@
   color: rgba(255,255,255,0.85);
 }
 
+@media (max-width: 1440px){
+  /* 첫 번째 product-hero - detail-page-tab1-1440 */
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
+    background-image: url("../img/case.detail/detail-page-tab1-1440.jpg");
+    border-radius: 0;
+    overflow: visible;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
+    display: none;
+  }
+
+  /* glass-panel - detail-page-tab2-1440 */
+  .product-hero.glass-panel{
+    background: url("../img/case.detail/detail-page-tab2-1440.jpg") no-repeat center;
+    background-size: contain;
+    border-radius: 0;
+    overflow: visible;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-hero.glass-panel::before{
+    display: none;
+  }
+
+  .product-hero.glass-panel .glass-panel__inner,
+  .product-hero.glass-panel .glass-panel__text{
+    display: none;
+  }
+
+
+  .product-hero.infinirail .infinirail__inner,
+  .product-hero.infinirail .infinirail__text{
+    display: none;
+  }
+
+  /* airflow - detail-page-tab4-1440 */
+  .product-hero.airflow{
+    background: url("../img/case.detail/detail-page-tab4-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
+    border-radius: 0;
+    overflow: visible;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-hero.airflow::before{
+    display: none;
+  }
+
+  .product-hero.airflow .airflow__inner,
+  .product-hero.airflow .airflow__text{
+    display: none;
+  }
+
+  /* ventilation - detail-page-tab5-1440 */
+  .product-hero.ventilation{
+    background: url("../img/case.detail/detail-page-tab5-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
+    border-radius: 0;
+    overflow: visible;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-hero.ventilation::before{
+    display: none;
+  }
+
+  .product-hero.ventilation .ventilation__inner,
+  .product-hero.ventilation .ventilation__text{
+    display: none;
+  }
+
+  /* cables는 그대로 유지 */
+  .product-hero.cables{
+    border-radius: 0;
+    overflow: visible;
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .product-hero__inner,
+  .glass-panel__inner,
+  .airflow__inner,
+  .ventilation__inner,
+  .cables__inner{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .product-hero__text{
+    max-width: 480px;
+  }
+
+  .product-hero__title{
+    font-size: clamp(2.2rem, 3vw, 3rem);
+  }
+
+  .product-hero__subtitle{
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+  }
+
+  .glass-panel__inner{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .glass-panel__text h1{
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  }
+
+  .glass-panel__text h4{
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .glass-panel__text p{
+    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  }
+
+  .infinirail__inner{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 8rem;
+    padding-left: 4rem;
+    justify-content: flex-end;
+  }
+
+  .infinirail__text{
+    max-width: 520px;
+  }
+
+  .infinirail__text h1{
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  }
+
+  .infinirail__text h4{
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .infinirail__text p{
+    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  }
+
+  .airflow__inner{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .airflow__text{
+    max-width: 480px;
+  }
+
+  .airflow__text h1{
+    font-size: clamp(2.2rem, 3vw, 3.6rem);
+  }
+
+  .airflow__text h4{
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .airflow__text p{
+    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  }
+
+  .ventilation__inner{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .ventilation__text{
+    max-width: 700px;
+  }
+
+  .ventilation__text h1{
+    font-size: clamp(2.2rem, 3vw, 3.6rem);
+  }
+
+  .ventilation__text h4{
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .ventilation__text p{
+    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  }
+
+  .cables__inner{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .cables__text{
+    max-width: 600px;
+  }
+
+  .cables__text h1{
+    font-size: clamp(2.2rem, 3vw, 3.6rem);
+  }
+
+  .cables__text h4{
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .cables__text p{
+    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  }
+}
+
 @media (max-width: 1180px){
+  .product-hero{
+    height: auto;
+    aspect-ratio: 1920 / 900;
+  }
+
   .product-hero.glass-panel{
     height: auto;
     aspect-ratio: 1920 / 900;
+  }
+
+  .product-hero__inner{
+    padding: 0 3rem;
+  }
+
+  .product-hero__text{
+    max-width: 420px;
+  }
+
+  .product-hero__title{
+    font-size: 2.2rem;
+  }
+
+  .product-hero__subtitle{
+    font-size: 1rem;
   }
 
   .glass-panel__inner{
@@ -113,27 +371,67 @@
   }
 
   .glass-panel__text{
-    max-width: 100%;
-    align-items: center;
+    max-width: 500px;
+    align-items: flex-start;
+  }
+
+  .glass-panel__text h1{
+    font-size: 2.8rem;
+  }
+
+  .glass-panel__text h4{
+    font-size: 0.9rem;
+  }
+
+  .glass-panel__text p{
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 768px){
-  .product-hero.glass-panel{
-    margin-top: 4rem;
-    border-radius: 16px;
+  /* 첫 번째 product-hero - detail-page-tab1-768 */
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
+    background: url("../img/case.detail/detail-page-tab1-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
+    margin: 0 !important;
+    border-radius: 0;
   }
 
-  .glass-panel__inner{
-    padding: 0 2rem;
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
+    display: none;
+  }
+
+  /* glass-panel - detail-page-tab2-768 */
+  .product-hero.glass-panel{
+    background: url("../img/case.detail/detail-page-tab2-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+    margin: 0 !important;
+    border-radius: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
+  }
+
+  .product-hero.glass-panel::before{
+    display: none;
+  }
+
+  .product-hero.glass-panel .glass-panel__inner,
+  .product-hero.glass-panel .glass-panel__text{
+    display: none;
   }
 }
 
 /* Infinirail section */
-.product-hero.infinirail{
+.product-hero.infinirail {
   max-width: 1920px;
   height: 900px;
-  margin: 6rem auto 0;
   border-radius: 24px;
   background: url("../img/case.detail/detail\ page3.jpg") no-repeat center/cover;
   color: #fff;
@@ -190,31 +488,62 @@
     margin-top: 4rem;
     }
 
-@media (max-width: 1180px){
+@media (max-width: 1180px) and (min-width: 769px){
   .product-hero.infinirail{
     height: auto;
     aspect-ratio: 1920 / 900;
-  }
-
-  .infinirail__inner{
-    padding: 0 3rem;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .infinirail__text{
-    align-items: center;
+    background: url("../img/case.detail/detail-page-tab3-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
   }
 }
 
 @media (max-width: 768px){
   .product-hero.infinirail{
-    margin-top: 4rem;
-    border-radius: 16px;
+    background: url("../img/case.detail/detail-page-tab3-768.jpg") no-repeat center !important;
+    background-size: contain !important;
   }
+}
 
   .infinirail__inner{
-    padding: 0 2rem;
+    padding: 0 3rem;
+    justify-content: flex-end;
+  }
+
+  .infinirail__text{
+    max-width: 480px;
+    align-items: flex-start;
+  }
+
+  .infinirail__text h1{
+    font-size: 2.8rem;
+  }
+
+  .infinirail__text h4{
+    font-size: 0.9rem;
+  }
+
+  .infinirail__text p{
+    font-size: 0.75rem;
+  }
+
+
+@media (max-width: 768px){
+  /* infinirail - detail-page-tab3-768 */
+  .product-hero.infinirail{
+    background: url("../img/case.detail/detail-page-tab3-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+    margin: 0 !important;
+    border-radius: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
+    overflow: visible;
+  }
+
+  .product-hero.infinirail .infinirail__inner,
+  .product-hero.infinirail .infinirail__text{
+    display: none;
   }
 }
 
@@ -289,27 +618,53 @@
   .product-hero.airflow{
     height: auto;
     aspect-ratio: 1920 / 900;
+    background: url("../img/case.detail/detail-page-tab4-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
   }
 
   .airflow__inner{
     padding: 0 3rem;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
   }
 
   .airflow__text{
-    align-items: center;
+    max-width: 420px;
+    align-items: flex-start;
+  }
+
+  .airflow__text h1{
+    font-size: 2.6rem;
+  }
+
+  .airflow__text h4{
+    font-size: 0.9rem;
+  }
+
+  .airflow__text p{
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 768px){
+  /* airflow - detail-page-tab4-768 */
   .product-hero.airflow{
-    margin-top: 4rem;
-    border-radius: 16px;
+    background: url("../img/case.detail/detail-page-tab4-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+    margin: 0 !important;
+    border-radius: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
   }
 
-  .airflow__inner{
-    padding: 0 2rem;
+  .product-hero.airflow::before{
+    display: none;
+  }
+
+  .product-hero.airflow .airflow__inner,
+  .product-hero.airflow .airflow__text{
+    display: none;
   }
 }
 
@@ -372,27 +727,53 @@
   .product-hero.ventilation{
     height: auto;
     aspect-ratio: 1920 / 900;
+    background: url("../img/case.detail/detail-page-tab5-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
   }
 
   .ventilation__inner{
     padding: 0 3rem;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-end;
   }
 
   .ventilation__text{
-    align-items: center;
+    max-width: 600px;
+    align-items: flex-start;
+  }
+
+  .ventilation__text h1{
+    font-size: 2.6rem;
+  }
+
+  .ventilation__text h4{
+    font-size: 0.9rem;
+  }
+
+  .ventilation__text p{
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 768px){
+  /* ventilation - detail-page-tab5-768 */
   .product-hero.ventilation{
-    margin-top: 4rem;
-    border-radius: 16px;
+    background: url("../img/case.detail/detail-page-tab5-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+    margin: 0 !important;
+    border-radius: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
   }
 
-  .ventilation__inner{
-    padding: 0 2rem;
+  .product-hero.ventilation::before{
+    display: none;
+  }
+
+  .product-hero.ventilation .ventilation__inner,
+  .product-hero.ventilation .ventilation__text{
+    display: none;
   }
 }
 
@@ -462,23 +843,59 @@
 
   .cables__inner{
     padding: 0 3rem;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
   }
 
   .cables__text{
-    align-items: center;
+    max-width: 550px;
+    align-items: flex-start;
+  }
+
+  .cables__text h1{
+    font-size: 2.6rem;
+  }
+
+  .cables__text h4{
+    font-size: 0.9rem;
+  }
+
+  .cables__text p{
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 768px){
   .product-hero.cables{
     margin-top: 4rem;
-    border-radius: 16px;
+    border-radius: 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .cables__inner{
-    padding: 0 2rem;
+    padding: 2rem 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cables__text{
+    max-width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cables__text h1{
+    font-size: 1.8rem;
+  }
+
+  .cables__text h4{
+    font-size: 0.8rem;
+  }
+
+  .cables__text p{
+    font-size: 0.7rem;
+    line-height: 180%;
   }
 }
 
@@ -533,6 +950,8 @@ html{
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .product-detail__title {
@@ -548,6 +967,9 @@ html{
   padding: 0;
   display: grid;
   gap: 0.85rem;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
 
 .product-detail__features li{
@@ -755,23 +1177,344 @@ html{
   }
 }
 
+@media (max-width: 1024px){
+  .product-detail__btn{
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* 첫 번째 product-hero - detail-page-tab1-1440 */
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
+    background: url("../img/case.detail/detail-page-tab1-1440.jpg") no-repeat center;
+    background-size: contain;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+  }
+
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
+  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
+    display: none;
+  }
+
+  /* glass-panel - detail-page-tab2-1440 */
+  .product-hero.glass-panel{
+    background: url("../img/case.detail/detail-page-tab2-1440.jpg") no-repeat center;
+    background-size: contain;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+  }
+
+  .product-hero.glass-panel::before{
+    display: none;
+  }
+
+  .product-hero.glass-panel .glass-panel__inner,
+  .product-hero.glass-panel .glass-panel__text{
+    display: none;
+  }
+
+  /* infinirail - detail-page-tab3-1440 */
+  .product-hero.infinirail{
+    background: url("../img/case.detail/detail-page-tab3-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+  }
+
+  .product-hero.infinirail .infinirail__inner,
+  .product-hero.infinirail .infinirail__text{
+    display: none;
+  }
+
+  /* airflow - detail-page-tab4-1440 */
+  .product-hero.airflow{
+    background: url("../img/case.detail/detail-page-tab4-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+  }
+
+  .product-hero.airflow::before{
+    display: none;
+  }
+
+  .product-hero.airflow .airflow__inner,
+  .product-hero.airflow .airflow__text{
+    display: none;
+  }
+
+  /* ventilation - detail-page-tab5-1440 */
+  .product-hero.ventilation{
+    background: url("../img/case.detail/detail-page-tab5-1440.jpg") no-repeat center !important;
+    background-size: contain !important;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+  }
+
+  .product-hero.ventilation::before{
+    display: none;
+  }
+
+  .product-hero.ventilation .ventilation__inner,
+  .product-hero.ventilation .ventilation__text{
+    display: none;
+  }
+
+  /* cables는 그대로 유지 */
+}
+
 @media (max-width: 768px){
+  .product-hero{
+    height: auto;
+    min-height: 0;
+    max-height: 50vh;
+    aspect-ratio: auto;
+    margin: 0 !important;
+    border-radius: 0;
+    overflow: visible;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .product-hero__inner{
+    padding: 2rem 1.5rem;
+  }
+
+  .product-hero__text{
+    max-width: 100%;
+    gap: 0.8rem;
+  }
+
+  .product-hero__badge{
+    width: 70px;
+  }
+
+  .product-hero__title{
+    font-size: 1.5rem;
+    line-height: 130%;
+  }
+
+  .product-hero__subtitle{
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .product-hero.glass-panel{
+    margin-top: 0;
+  }
+
   .product-detail{
-    padding: 2.5rem 1.8rem;
-    border-radius: 1.9rem;
-    gap: 2.4rem;
+    margin: 2rem auto 4rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    gap: 2rem;
+  }
+
+  .product-detail__info{
+    padding: 2rem 1.5rem;
+  }
+
+  .product-detail__title{
+    font-size: 1.4rem;
+    line-height: 135%;
+  }
+
+  .product-detail__features li{
+    font-size: 0.85rem;
+    padding-left: 1.2rem;
   }
 
   .product-detail__actions{
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+
+  .product-detail__visual img{
+    max-width: 280px;
+  }
+
+  .product-detail__info{
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .product-detail__features{
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
   }
 
   .product-detail__btn{
-    width: 100%;
+    flex: 1 1 auto;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
+    min-width: 0;
   }
 
   .product-detail__meta{
+    flex-direction: column;
     gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .product-detail__price{
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .product-detail__price .price-value{
+    font-size: 1.4rem;
+  }
+
+  .glass-panel__inner,
+  .infinirail__inner,
+  .airflow__inner,
+  .ventilation__inner,
+  .cables__inner{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .glass-panel__text,
+  .infinirail__text,
+  .airflow__text,
+  .ventilation__text,
+  .cables__text{
+    max-width: 100%;
+  }
+
+  .glass-panel__text h1,
+  .infinirail__text h1{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: 130%;
+  }
+
+  .airflow__text h1,
+  .ventilation__text h1,
+  .cables__text h1{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 130%;
+  }
+
+  .glass-panel__text h4,
+  .infinirail__text h4,
+  .airflow__text h4,
+  .ventilation__text h4,
+  .cables__text h4{
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+  }
+
+  .glass-panel__text p,
+  .infinirail__text p,
+  .airflow__text p,
+  .ventilation__text p,
+  .cables__text p{
+    font-size: 0.85rem;
+    line-height: 180%;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .promotional-deals-title{
+    margin-bottom: 2rem;
+  }
+
+  .promotional-deals-title h1{
+    font-size: 1.6rem;
+  }
+
+  .promotional-deals-title p{
+    font-size: 0.9rem;
+  }
+
+  .promotional-deals{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .promotional-deals > div{
+    flex-direction: column;
+    padding: 0.8rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .promotional-deals > div figure{
+    width: 40px;
+    height: 40px;
+  }
+
+  .promotional-deals > div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .promotional-deals > div h4{
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .promotional-deals > div p{
+    font-size: 0.75rem;
+  }
+
+  .product-diy{
+    margin: 4rem auto 5rem;
+    padding: 0 1.5rem;
+  }
+
+  .product-diy__header{
+    margin-bottom: 2.5rem;
+  }
+
+  .product-diy__header > h1{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+  }
+
+  .product-diy__header > p{
+    font-size: 0.85rem;
+  }
+
+  .product-diy__body{
+    padding: 1.5rem;
+  }
+
+  .product-diy__body h3{
+    font-size: 1.1rem;
+  }
+
+  .product-diy__body p{
+    font-size: 0.85rem;
+  }
+
+  .product-size{
+    margin: 4rem auto 5rem;
+    padding: 0 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .product-size__column h3{
+    font-size: 1.5rem;
+  }
+
+  .product-size__column p{
+    font-size: 0.85rem;
   }
 }
 
@@ -921,5 +1664,159 @@ html{
   .product-size{
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+}
+
+@media (max-width: 430px){
+  .product-hero{
+    min-height: 0;
+    max-height: 45vh;
+    aspect-ratio: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 !important;
+  }
+
+  .product-hero.glass-panel,
+  .product-hero.infinirail,
+  .product-hero.airflow,
+  .product-hero.ventilation,
+  .product-hero.cables{
+    min-height: 0;
+    max-height: 45vh;
+    aspect-ratio: auto;
+    margin: 0 !important;
+  }
+
+  .product-hero__inner,
+  .glass-panel__inner,
+  .airflow__inner,
+  .ventilation__inner,
+  .cables__inner{
+    padding: 1.5rem 1rem;
+  }
+
+  .infinirail__inner{
+    padding: 1.5rem 1rem;
+    justify-content: flex-end;
+  }
+
+  .product-hero__text,
+  .glass-panel__text,
+  .infinirail__text,
+  .airflow__text,
+  .ventilation__text,
+  .cables__text{
+    gap: 0.7rem;
+  }
+
+  .product-hero__title{
+    font-size: 1.3rem;
+  }
+
+  .product-hero__subtitle{
+    font-size: 0.75rem;
+  }
+
+  .product-hero__badge{
+    width: 55px;
+  }
+
+  .product-hero.glass-panel{
+    background-size: 100% auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  .glass-panel__text{
+    max-width: 48%;
+  }
+
+  .glass-panel__text h1{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    line-height: 130%;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .glass-panel__text h1 br,
+  .glass-panel__text p br{
+    display: none;
+  }
+
+  .glass-panel__text p{
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  .product-hero.infinirail{
+    background: url("../img/case.detail/detail-page-tab3-768.jpg") no-repeat center !important;
+    background-size: contain !important;
+  }
+
+  .infinirail__inner{
+    justify-content: flex-end;
+  }
+
+  .infinirail__text{
+    max-width: 48%;
+    margin-left: auto;
+  }
+
+  .infinirail__text h1{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    line-height: 130%;
+  }
+
+  .infinirail__text h1 br{
+    display: none;
+  }
+
+  .infinirail__text h4{
+    font-size: 0.65rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .infinirail__text p{
+    font-size: 0.55rem;
+    line-height: 160%;
+    margin-top: 0.8rem;
+  }
+
+  .infinirail__text p br{
+    display: none;
+  }
+
+  .airflow__text h1,
+  .ventilation__text h1,
+  .cables__text h1{
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .glass-panel__text h4,
+  .infinirail__text h4,
+  .airflow__text h4,
+  .ventilation__text h4,
+  .cables__text h4{
+    font-size: 0.75rem;
+  }
+
+  .glass-panel__text p,
+  .infinirail__text p,
+  .airflow__text p,
+  .ventilation__text p,
+  .cables__text p{
+    font-size: 0.65rem;
+    line-height: 170%;
+  }
+
+  .infinirail__badge,
+  .airflow__badge{
+    width: 100px;
   }
 }

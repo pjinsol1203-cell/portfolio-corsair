@@ -17,11 +17,37 @@
 }
 
     .promotional-deals {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     text-align: center;
-    gap: 2rem;
-    margin-bottom: 10rem;
+    gap: 0.6rem;
+    margin-bottom: 4rem;
+    }
+
+    .promotional-deals > div{
+        flex-direction: column;
+        padding: 0.8rem 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .promotional-deals > div figure{
+        width: 40px;
+        height: 40px;
+    }
+
+    .promotional-deals > div figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .promotional-deals > div h4{
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .promotional-deals > div p{
+        font-size: 0.75rem;
     }
 
     .hero-banner-slider .swiper-pagination-bullet{
@@ -34,27 +60,154 @@
     .hero-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
         bottom: 1rem;
     }
+
+    .guide-article-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .guide-wrapper{
+        margin-bottom: 4rem;
+    }
+
+    /* 모바일에서 5번째 guide-article부터 숨기기 */
+    .guide-article:nth-child(n+5){
+        display: none;
+    }
+
+    /* 가이드 보러가기 링크 표시 */
+    .guide-more-link{
+        display: block;
+    }
+
+    /* detail.html 모바일 최적화 */
+    .product-detail{
+        margin: 2rem auto 3rem;
+        padding: 1.5rem;
+    }
+
+    .product-detail__title{
+        font-size: 1.3rem;
+    }
+
+    .product-detail__info{
+        padding: 1.5rem;
+    }
+
+    .product-hero{
+        min-height: 400px;
+        margin-top: 2rem;
+    }
+
+    .product-hero__inner{
+        padding: 1.5rem;
+    }
+
+    .product-hero__title{
+        font-size: 1.8rem;
+    }
+
+    .promotional-deals{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .promotional-deals > div{
+        flex-direction: column;
+        padding: 0.8rem 0.5rem;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .promotional-deals > div figure{
+        width: 40px;
+        height: 40px;
+    }
+
+    .promotional-deals > div figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .promotional-deals > div h4{
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .promotional-deals > div p{
+        font-size: 0.75rem;
+    }
+
+    .promotional-deals-title{
+        margin-bottom: 2rem;
+    }
+
+    .promotional-deals-title h1{
+        font-size: 1.6rem;
+    }
+
+    .promotional-deals-title p{
+        font-size: 0.9rem;
+    }
+
+    .product-diy__grid{
+        gap: 1.2rem;
+    }
+
+    .product-size{
+        gap: 2rem;
+    }
+
+    .product-detail__visual img{
+        max-width: 280px;
+    }
+
+    .product-detail__actions{
+        flex-direction: row;
+        gap: 0.6rem;
+    }
+
+    .product-detail__btn{
+        flex: 1 1 auto;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+        min-width: 0;
+    }
 }
 
 @media (max-width:720px){
     .guide-wrapper {
     width: 100%;
     max-width: 560px;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     padding: 0 1rem;
     box-sizing: border-box;
 }
     .guide-article-grid{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
 @media (max-width:480px){
     .guide-wrapper{
         max-width: 100%;
+        margin-bottom: 4rem;
     }
     .guide-article-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    /* 모바일에서 5번째 guide-article부터 숨기기 */
+    .guide-article:nth-child(n+5){
+        display: none;
+    }
+
+    /* 가이드 보러가기 링크 표시 */
+    .guide-more-link{
+        display: block;
     }
 }

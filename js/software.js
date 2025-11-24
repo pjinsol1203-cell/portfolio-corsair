@@ -20,6 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 200);
     });
   });
+
+  // 토글 버튼 기능
+  const toggleButton = document.querySelector('.icue-murals__toggle');
+  const palette = document.querySelector('.icue-murals__palette');
+  
+  if (toggleButton && palette) {
+    toggleButton.addEventListener('click', () => {
+      const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+      
+      if (isExpanded) {
+        // 접기
+        toggleButton.setAttribute('aria-expanded', 'false');
+        palette.classList.add('collapsed');
+      } else {
+        // 펼치기
+        toggleButton.setAttribute('aria-expanded', 'true');
+        palette.classList.remove('collapsed');
+      }
+    });
+  }
 });
 
 
