@@ -1,3 +1,29 @@
+/* 반응형 detail 이미지 */
+.detail-responsive-image {
+  display: none;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.detail-responsive-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detail-image-1440 {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.detail-image-768 {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
 /* Hero Section */
 .product-hero{
   width: 100%;
@@ -6,6 +32,7 @@
   margin: 6rem auto 0;
   border-radius: 24px;
   background: url("../img/case.detail/detail%20page1.jpg") no-repeat center/cover;
+  background-image: url("../img/case.detail/detail%20page1.jpg");
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -101,22 +128,41 @@
   color: rgba(255,255,255,0.85);
 }
 
-@media (max-width: 1440px){
+/* 768px 이상에서는 product-hero 숨기기 (1440px 미만 범위에서도) */
+@media (min-width: 768px) and (max-width: 1440px) {
+  .product-hero,
+  .product-hero.glass-panel,
+  .product-hero.infinirail,
+  .product-hero.airflow,
+  .product-hero.ventilation,
+  .product-hero.cables {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 767px){
   /* 첫 번째 product-hero - detail-page-tab1-1440 */
-  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
-    background-image: url("../img/case.detail/detail-page-tab1-1440.jpg");
+.product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) {
+    background-image: none;
     border-radius: 0;
     overflow: visible;
     max-width: none;
     width: 100%;
     margin: 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-  }
+    min-height: 0;
+    aspect-ratio: none;
+    max-height: initial;
+}
 
   .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
   .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
@@ -388,8 +434,10 @@
   }
 }
 
-@media (max-width: 768px){
-  /* 첫 번째 product-hero - detail-page-tab1-768 */
+@media (max-width: 767px){
+  /* 첫 번째 product-hero - detail-page-tab1-768 (더 작은 화면용) */
+  /* 주석 처리: detail-page-tab1-1440.jpg를 사용하도록 위의 스타일이 우선 적용됨 */
+  /*
   .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
     background: url("../img/case.detail/detail-page-tab1-768.jpg") no-repeat center !important;
     background-size: contain !important;
@@ -400,6 +448,7 @@
     margin: 0 !important;
     border-radius: 0;
   }
+  */
 
   .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
   .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
@@ -497,7 +546,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .product-hero.infinirail{
     background: url("../img/case.detail/detail-page-tab3-768.jpg") no-repeat center !important;
     background-size: contain !important;
@@ -527,7 +576,7 @@
   }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   /* infinirail - detail-page-tab3-768 */
   .product-hero.infinirail{
     background: url("../img/case.detail/detail-page-tab3-768.jpg") no-repeat center !important;
@@ -645,7 +694,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   /* airflow - detail-page-tab4-768 */
   .product-hero.airflow{
     background: url("../img/case.detail/detail-page-tab4-768.jpg") no-repeat center !important;
@@ -754,7 +803,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   /* ventilation - detail-page-tab5-768 */
   .product-hero.ventilation{
     background: url("../img/case.detail/detail-page-tab5-768.jpg") no-repeat center !important;
@@ -864,7 +913,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .product-hero.cables{
     margin-top: 4rem;
     border-radius: 0;
@@ -1182,98 +1231,9 @@ html{
     padding: 0.7rem 1.2rem;
     font-size: 0.85rem;
   }
-
-  /* 첫 번째 product-hero - detail-page-tab1-1440 */
-  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables){
-    background: url("../img/case.detail/detail-page-tab1-1440.jpg") no-repeat center;
-    background-size: contain;
-    height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-  }
-
-  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__inner,
-  .product-hero:not(.glass-panel):not(.infinirail):not(.airflow):not(.ventilation):not(.cables) .product-hero__text{
-    display: none;
-  }
-
-  /* glass-panel - detail-page-tab2-1440 */
-  .product-hero.glass-panel{
-    background: url("../img/case.detail/detail-page-tab2-1440.jpg") no-repeat center;
-    background-size: contain;
-    height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-  }
-
-  .product-hero.glass-panel::before{
-    display: none;
-  }
-
-  .product-hero.glass-panel .glass-panel__inner,
-  .product-hero.glass-panel .glass-panel__text{
-    display: none;
-  }
-
-  /* infinirail - detail-page-tab3-1440 */
-  .product-hero.infinirail{
-    background: url("../img/case.detail/detail-page-tab3-1440.jpg") no-repeat center !important;
-    background-size: contain !important;
-    height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-  }
-
-  .product-hero.infinirail .infinirail__inner,
-  .product-hero.infinirail .infinirail__text{
-    display: none;
-  }
-
-  /* airflow - detail-page-tab4-1440 */
-  .product-hero.airflow{
-    background: url("../img/case.detail/detail-page-tab4-1440.jpg") no-repeat center !important;
-    background-size: contain !important;
-    height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-  }
-
-  .product-hero.airflow::before{
-    display: none;
-  }
-
-  .product-hero.airflow .airflow__inner,
-  .product-hero.airflow .airflow__text{
-    display: none;
-  }
-
-  /* ventilation - detail-page-tab5-1440 */
-  .product-hero.ventilation{
-    background: url("../img/case.detail/detail-page-tab5-1440.jpg") no-repeat center !important;
-    background-size: contain !important;
-    height: auto;
-    min-height: 600px;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-  }
-
-  .product-hero.ventilation::before{
-    display: none;
-  }
-
-  .product-hero.ventilation .ventilation__inner,
-  .product-hero.ventilation .ventilation__text{
-    display: none;
-  }
-
-  /* cables는 그대로 유지 */
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .product-hero{
     height: auto;
     min-height: 0;
@@ -1650,14 +1610,15 @@ html{
   margin: 0;
 }
 
-.product-size__column figure img{
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
-  background: rgba(8, 8, 16, 0.85);
-  padding: 1.5rem;
-  box-shadow: 0 16px 28px rgba(0,0,0,0.3);
+.product-size__column figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    background: rgba(8, 8, 16, 0.85);
+    padding: 1.5rem;
+    box-shadow: 0 16px 28px rgba(0,0,0,0.3);
+    box-sizing: border-box;
 }
 
 @media (max-width: 900px){
@@ -1818,5 +1779,214 @@ html{
   .infinirail__badge,
   .airflow__badge{
     width: 100px;
+  }
+}
+
+/* 1440px 이상에서 product-hero 숨기고 detail-1440.jpg 보여주기 */
+@media (min-width: 1440px) {
+  .product-hero,
+  .product-hero.glass-panel,
+  .product-hero.infinirail,
+  .product-hero.airflow,
+  .product-hero.ventilation,
+  .product-hero.cables {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  section.detail-responsive-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  section.detail-responsive-image .detail-image-1440 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  section.detail-responsive-image .detail-image-768 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+/* 768px 이상 1439px 이하에서 detail-768.jpg 보여주기 */
+@media (min-width: 768px) and (max-width: 1439px) {
+  /* 모든 product-hero 숨기기 */
+  .product-hero,
+  .product-hero.glass-panel,
+  .product-hero.infinirail,
+  .product-hero.airflow,
+  .product-hero.ventilation,
+  .product-hero.cables {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* detail-768.jpg 표시 */
+  section.detail-responsive-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  section.detail-responsive-image .detail-image-1440 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  section.detail-responsive-image img.detail-image-768 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    max-width: 100% !important;
+  }
+
+  section.detail-responsive-image img.detail-image-1440 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+}
+
+/* 768px 정확히에서도 detail-768.jpg 보이도록 보장 */
+@media (min-width: 768px) and (max-width: 768px) {
+  section.detail-responsive-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  section.detail-responsive-image img.detail-image-768 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  section.detail-responsive-image img.detail-image-1440 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+/* 768px 미만에서는 detail-responsive-image 숨기기 */
+@media (max-width: 767px) {
+  .detail-responsive-image {
+    display: none !important;
+  }
+
+  .detail-image-1440 {
+    display: none !important;
+  }
+
+  .detail-image-768 {
+    display: none !important;
+  }
+}
+
+/* 768px 이상에서 모든 product-hero 강제로 숨기기 및 detail 이미지 표시 (최종 우선순위) */
+@media (min-width: 768px) {
+  section.product-hero,
+  section.product-hero.glass-panel,
+  section.product-hero.infinirail,
+  section.product-hero.airflow,
+  section.product-hero.ventilation,
+  section.product-hero.cables {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+  }
+
+  /* 768px 이상에서 detail-responsive-image 표시 */
+  section.detail-responsive-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+}
+
+/* 768px 이상 1439px 이하에서 detail-768.jpg만 표시 */
+@media (min-width: 768px) and (max-width: 1439px) {
+  section.detail-responsive-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  section.detail-responsive-image img.detail-image-768 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    max-width: 100% !important;
+  }
+
+  section.detail-responsive-image img.detail-image-1440 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
 }

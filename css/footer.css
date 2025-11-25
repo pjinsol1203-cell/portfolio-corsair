@@ -16,12 +16,13 @@ background: url(../img/footer-BG.jpg) no-repeat center / cover;
   }
   
   footer .common-frame.footer,
-  footer .common-frame{
+ footer .common-frame.footer, footer .common-frame {
     max-width: 100% !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    margin: 0 2rem;
-  }
+    /* margin: 0 2rem; */
+    padding: 0 2rem;
+}
   
   footer .footer_bt-txt{
     padding: 0 3rem !important;
