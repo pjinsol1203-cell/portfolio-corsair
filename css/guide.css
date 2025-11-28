@@ -17,8 +17,8 @@ body{
     align-items: center;
 }
 
-.guide-hero h1{
-   line-height: 100%;
+.guide-hero h1 {
+    line-height: 120%;
 }
 
 .guide-intro{
@@ -339,9 +339,10 @@ body{
 }
 
 @media (max-width: 480px){
-    .guide-search{
-        padding: 0.35rem 0.35rem 0.35rem 1rem;
-    }
+.guide-search {
+    padding: 0.35rem 0.35rem 0.35rem 1rem;
+    box-sizing: border-box;
+}
 
     .guide-categories-toggle{
         display: flex;

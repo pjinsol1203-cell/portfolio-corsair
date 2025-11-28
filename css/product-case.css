@@ -189,9 +189,10 @@ padding: 2rem 0;
 border: 2px solid var(--point-pink);
 }
 
-.product-list img{
-height: 15rem;
-margin-bottom: 2rem;
+.product-list img {
+    height: 15rem;
+    margin-bottom: 2rem;
+    object-fit: contain;
 }
 
 .product-list h3{
@@ -291,6 +292,7 @@ var(--color2) 50%);
     display: block;
     border-radius: 8px;
     margin-bottom: 1rem;
+    object-fit: contain;
 }
 
 .correct-txt .point {
@@ -421,4 +423,32 @@ var(--color2) 50%);
 .guide-more-btn:hover{
   transform: translateY(-2px);
   box-shadow: 0 16px 32px rgba(140, 50, 255, 0.35);
+}
+
+@media (max-width:768px){
+  .category-select {
+      position: relative;
+      margin: 4rem auto 0 auto;
+      max-width: 260px;
+      width: 90%;
+  }
+  .banner-text p {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 1.4rem 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(3px);
+}
+.main-banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/no.1pc\ product/pc-case-banner.jpg) no-repeat center/cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
 }

@@ -54,8 +54,8 @@
     --font-normal:400;
 
     /* line-height */
-    --base-line-height:120%;
-    --text-line-height:140%;
+    --base-line-height:1.2;
+    --text-line-height:1.4;
 
     /* spacing */
     --space-x-small:0.5rem;

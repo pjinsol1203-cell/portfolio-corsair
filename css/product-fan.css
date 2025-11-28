@@ -114,7 +114,7 @@ html{
 .fan-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 6rem;
+    gap: 1rem;
     margin-bottom: 6rem;
 }
 
@@ -226,4 +226,29 @@ html{
 
 .category-select__option.active:hover{
     transform: none;
+}
+
+@media (max-width:1400px){
+    .fan-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem 1rem;
+        margin-bottom: 6rem;
+    }
+}
+@media (max-width:1024px){
+    .fan-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem 1rem;
+        margin-bottom: 6rem;
+    }
+}
+@media (max-width:550px){
+    .fan-grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem 1rem;
+        margin-bottom: 6rem;
+    }
 }

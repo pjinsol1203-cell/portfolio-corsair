@@ -1,4 +1,14 @@
 @media (max-width:430px){
+
+    .guide-page-list {
+    width: 50%;
+    /* border: 1px solid #fff; */
+    white-space: nowrap;
+    overflow: auto;
+}
+
+    
+
     .icue-murals__headline{
         margin-top: 2rem;
         gap: 1rem;
@@ -46,10 +56,10 @@
         margin-bottom: 4rem;
     }
 
-    .guide-article-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
-    }
+.guide-article-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem;
+}
 
     /* 모바일에서 5번째 guide-article부터 숨기기 */
     .guide-article:nth-child(n+5){
@@ -199,11 +209,11 @@
         font-size: 0.85rem;
     }
 
-    .promotional-deals{
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 0.5rem;
-        margin-bottom: 3rem;
-    }
+.promotional-deals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
 
     .promotional-deals > div{
         flex-direction: column;
@@ -262,5 +272,12 @@
 
     .product-size__column p{
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width:280px){
+    .product-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 4rem 1.5rem;
     }
 }
